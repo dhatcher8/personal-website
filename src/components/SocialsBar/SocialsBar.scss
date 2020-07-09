@@ -1,5 +1,29 @@
 
 
 .socials-container {
-    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+
+    img {
+        padding: 9px;
+    }
+}
+
+.github-icon {
+    width: 30px;
+}
+
+.pdf-icon {
+    width: 26px;
+}
+
+.email-icon {
+    width: 32px;
+}
+
+.linkedin-icon {
+    width: 29px;
 }

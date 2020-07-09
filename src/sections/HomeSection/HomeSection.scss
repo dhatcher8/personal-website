@@ -10,7 +10,7 @@
 }
 
 .home-section-body {
-    padding-top: 40px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -28,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 0px;
 }
 
@@ -40,4 +40,12 @@
     color: black;
     text-decoration: none;
     font-size: 1.3rem;
+}
+
+.scroll-icon {
+    margin-top: 45px;
+    width: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

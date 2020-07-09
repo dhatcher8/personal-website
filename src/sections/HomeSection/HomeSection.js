@@ -1,6 +1,8 @@
 import React from 'react';
 
 import logoAndTitle from '../../assets/images/SVG/logo-and-title.svg';
+import scrollIcon from '../../assets/images/SVG/scroll-icon.svg';
+import SocialsBar from '../../components/SocialsBar/SocialsBar';
 import './HomeSection.scss';
 
 const home_section = props => {
@@ -16,6 +18,8 @@ const home_section = props => {
                         <li>Artist</li>
                     </ul>
                 </div>
+                <SocialsBar/>
+                <img className="scroll-icon" src={scrollIcon} alt=""></img>
             </div>
         </div>
     );
