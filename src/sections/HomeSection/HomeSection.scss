@@ -1,0 +1,43 @@
+
+
+.home-section-full {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.navbar-filler-div {
+    height: 100px;
+}
+
+.home-section-body {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.logo-and-title-big {
+    width: 50%;
+    max-width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subtitles-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+.subtitles-ul li {
+    margin-bottom: .4rem;
+    margin-top: .4rem;
+    text-align: center;
+    font-family: "Adihaus";
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+}

@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: "Adihaus";
+  src: url("assets/fonts/adihaus_regular.ttf");
+}
+@font-face {
+  font-family: "Adihaus";
+  src: url("assets/fonts/adihaus_bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Adihaus";
+  src: url("assets/fonts/adihaus_italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Adihaus";
+  src: url("assets/fonts/adihaus_oblique.ttf");
+  font-style: oblique;
 }

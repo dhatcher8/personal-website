@@ -1,0 +1,60 @@
+.side-menu {
+    height: 100%;
+    background: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: 200;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.side-menu.open {
+    transform: translateX(0);
+}
+
+.menu-button-white {
+    width: 35px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 1.5rem;
+    padding-top: 35px;
+    cursor: pointer;
+}
+
+
+.side-menu-items {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-menu-items li {
+    margin-bottom: .75rem;
+    margin-top: .75rem;
+    margin-right: 2rem;
+    text-align: right;
+}
+
+.side-menu-items a {
+    font-family: "Adihaus";
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.side-menu-items a:hover,
+.side-menu-items a:active {
+    font-weight: bold;
+}
+
+@media (min-width: 769px ) {
+    .side-menu {
+        display: none;
+    }
+}
