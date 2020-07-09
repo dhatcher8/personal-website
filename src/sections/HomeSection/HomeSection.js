@@ -19,7 +19,9 @@ const home_section = props => {
                     </ul>
                 </div>
                 <SocialsBar/>
-                <img className="scroll-icon" src={scrollIcon} alt=""></img>
+                <div className="scroll-icon-container">
+                    <img className="scroll-icon" src={scrollIcon} alt=""></img>
+                </div>
             </div>
         </div>
     );

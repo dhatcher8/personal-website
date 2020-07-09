@@ -10,7 +10,7 @@
 }
 
 .home-section-body {
-    padding-top: 20px;
+    padding-top: 15px;
     text-align: center;
 }
 
@@ -48,4 +48,14 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.scroll-icon-container {
+    height: 130px;
+}
+
+@media (min-width: 769px ) {
+    .home-section-body {
+        padding-top: 100px;
+    }
 }

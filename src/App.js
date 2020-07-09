@@ -4,6 +4,7 @@ import NavigationBar from './components/NavigationBar/NavigationBar';
 import SideMenu from './components/SideMenu/SideMenu';
 import Backdrop from './components/Backdrop/Backdrop';
 import HomeSection from './sections/HomeSection/HomeSection';
+import AboutMeSection from './sections/AboutMeSection/AboutMeSection';
 
 class App extends Component {
 	state = {
@@ -34,6 +35,7 @@ class App extends Component {
 				{backdrop}
 				<SideMenu show={this.state.sideMenuOpen} menuClickHandler={this.menuToggleClickHandler} />
 				<HomeSection/>
+				<AboutMeSection/>
 			</div>
 			
 		);
