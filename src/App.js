@@ -5,6 +5,11 @@ import SideMenu from './components/SideMenu/SideMenu';
 import Backdrop from './components/Backdrop/Backdrop';
 import HomeSection from './sections/HomeSection/HomeSection';
 import AboutMeSection from './sections/AboutMeSection/AboutMeSection';
+import PhotographySection from './sections/PhotographySection/PhotographySection';
+import ExperienceSection from './sections/ExperienceSection/ExperienceSection';
+import ProjectsSection from './sections/ProjectsSection/ProjectsSection';
+import ContactMeSection from './sections/ContactMeSection/ContactMeSection';
+
 
 class App extends Component {
 	state = {
@@ -36,6 +41,10 @@ class App extends Component {
 				<SideMenu show={this.state.sideMenuOpen} menuClickHandler={this.menuToggleClickHandler} />
 				<HomeSection/>
 				<AboutMeSection/>
+				<ExperienceSection/>
+				<ProjectsSection/>
+				<PhotographySection/>
+				<ContactMeSection/>
 			</div>
 			
 		);

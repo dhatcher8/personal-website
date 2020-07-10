@@ -42,9 +42,10 @@
 }
 
 @media (min-width: 769px ) {
-    .about-me-body-text {
+    .about-me-body-text, .section-header {
         margin-left: 60px;
         width: 60%;
         max-width: 700px;
     }
+
 }
