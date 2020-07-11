@@ -1,4 +1,5 @@
 import React from 'react';
+import { scroller } from 'react-scroll';
 
 import logoAndTitle from '../../assets/images/SVG/logo-and-title.svg';
 import scrollIcon from '../../assets/images/SVG/scroll-icon.svg';
@@ -6,6 +7,16 @@ import SocialsBar from '../../components/SocialsBar/SocialsBar';
 import './HomeSection.scss';
 
 const home_section = props => {
+    
+    const scrollTo = (destinationId) => {
+        scroller.scrollTo(destinationId, {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeInOut'
+        });
+
+    };
+    
     return (
         <div className="home-section-full">
             <div className="navbar-filler-div"></div>
@@ -20,7 +31,7 @@ const home_section = props => {
                 </div>
                 <SocialsBar/>
                 <div className="scroll-icon-container">
-                    <img className="scroll-icon" src={scrollIcon} alt=""></img>
+                    <a onClick={() => scrollTo('scroll-about-me-dest')}><img className="scroll-icon" src={scrollIcon} alt=""></img></a>
                 </div>
             </div>
         </div>

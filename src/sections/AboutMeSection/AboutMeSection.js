@@ -19,9 +19,9 @@ const about_me_section = props => {
                 <p className="about-me-body-text">
                     Keep scrolling to learn more about me!
                 </p>
-                <div className="scroll-icon-container">
+                {/* <div className="scroll-icon-container">
                     <img className="scroll-icon" src={scrollIcon} alt=""></img>
-                </div>
+                </div> */}
             </div>
         </div>
     );

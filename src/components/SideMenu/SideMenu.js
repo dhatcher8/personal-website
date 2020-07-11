@@ -18,6 +18,7 @@ const menuToggleButton = props => {
             smooth: 'easeInOut'
         });
         props.menuClickHandler();
+
     };
 
     return (
