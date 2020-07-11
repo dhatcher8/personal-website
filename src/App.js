@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Element } from 'react-scroll';
 
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import SideMenu from './components/SideMenu/SideMenu';
@@ -40,11 +41,11 @@ class App extends Component {
 				{backdrop}
 				<SideMenu show={this.state.sideMenuOpen} menuClickHandler={this.menuToggleClickHandler} />
 				<HomeSection/>
-				<AboutMeSection/>
-				<ExperienceSection/>
-				<ProjectsSection/>
-				<PhotographySection/>
-				<ContactMeSection/>
+				<Element id='scroll-about-me-dest'><AboutMeSection/></Element>
+				<Element id='scroll-experience-dest'><ExperienceSection/></Element>
+				<Element id='scroll-projects-dest'><ProjectsSection/></Element>
+				<Element id='scroll-photography-dest'><PhotographySection/></Element>
+				<Element id='scroll-contact-me-dest'><ContactMeSection/></Element>
 			</div>
 			
 		);
