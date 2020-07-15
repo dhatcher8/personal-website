@@ -1,6 +1,6 @@
 import React from 'react';
 
-import scrollIcon from '../../assets/images/SVG/scroll-icon.svg';
+// import scrollIcon from '../../assets/images/SVG/scroll-icon.svg';
 import './AboutMeSection.scss';
 
 const about_me_section = props => {
