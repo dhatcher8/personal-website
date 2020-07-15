@@ -27,6 +27,7 @@
     font-size: 1rem;
     margin-right: 30px;
     margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 .photography-subsection-headers {
@@ -52,8 +53,8 @@
 }
 
 @media (min-width: 769px ) {
-    .photography-subsection-body-text {
-        margin-left: 60px;
+    .photography-subsection-body-text, .photography-section-header {
+        margin-left: 90px;
         width: 60%;
         max-width: 700px;
     }
