@@ -1,4 +1,5 @@
 import React from 'react';
+import { scroller } from 'react-scroll';
 
 import MenuToggleButton from '../SideMenu/MenuToggleButton';
 import logoSVG from '../../assets/images/SVG/dh-logo.svg';
@@ -25,12 +26,21 @@ const navigation_bar = props => {
         prevScrollpos = currentScrollPos;
     }
 
+    const scrollTo = (destinationId) => {
+        scroller.scrollTo(destinationId, {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeInOut'
+        });
+
+    };
+
     return (
         <header className="navigation-bar">
             <nav className="navigation-bar-nav">
                 <div className="navigation-bar-logo">
-                    <a href="/">
-                        <img className="logo-small" src={logoSVG} alt="Logo">
+                    <a onClick={() => scrollTo('scroll-home-dest')}>
+                        <img className="logo-small" src={logoSVG} alt="Logo" >
                         </img>
                     </a>
                 </div>
@@ -40,11 +50,11 @@ const navigation_bar = props => {
                 </div> 
                 <div className="navigation-bar-list">
                     <ul>
-                        <li><a href="/">about me.</a></li>
-                        <li><a href="/">experience.</a></li>
-                        <li><a href="/">projects.</a></li>
-                        <li><a href="/">photography.</a></li>
-                        <li><a href="/">contact me.</a></li>
+                        <li><a title="about me." onClick={() => scrollTo('scroll-about-me-dest')}>about me.</a></li>
+                        <li><a title="experience." onClick={() => scrollTo('scroll-experience-dest')}>experience.</a></li>
+                        <li><a title="projects." onClick={() => scrollTo('scroll-projects-dest')}>projects.</a></li>
+                        <li><a title="photography." onClick={() => scrollTo('scroll-photography-dest')}>photography.</a></li>
+                        <li><a title="contact me." onClick={() => scrollTo('scroll-contact-me-dest')}>contact me.</a></li>
                     </ul>
                 </div>
             </nav>

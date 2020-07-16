@@ -19,6 +19,7 @@
 
 .logo-small {
     width: 53px;
+    cursor: pointer;
 }
 
 .spacer {
@@ -32,14 +33,12 @@
     padding: 0 2.5rem;
 }
 
+
 .navigation-bar-list a {
     color: black;
 }
 
-.navigation-bar-list a:hover,
-.navigation-bar-list a:active {
-    font-weight: bold;
-}
+
 
 .navigation-bar-list ul {
     list-style: none;
@@ -50,6 +49,26 @@
 
 .navigation-bar-list li {
     padding: 0 .5rem;
+    vertical-align: middle;
+    margin-bottom: 22px;
+}
+
+.navigation-bar-list a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navigation-bar-list a:hover,
+.navigation-bar-list a:active {
+    font-weight: bold;
+}
+
+.navigation-bar-list a:before {
+    display: block;
+    overflow: hidden;
+    font-weight: bold;
+    visibility: hidden;
+    content: attr(title);
 }
 
 

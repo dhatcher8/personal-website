@@ -40,7 +40,7 @@ class App extends Component {
 				<NavigationBar menuClickHandler={this.menuToggleClickHandler}/>
 				{backdrop}
 				<SideMenu show={this.state.sideMenuOpen} menuClickHandler={this.menuToggleClickHandler} />
-				<HomeSection/>
+				<Element id='scroll-home-dest'><HomeSection/></Element>
 				<Element id='scroll-about-me-dest'><AboutMeSection/></Element>
 				<Element id='scroll-experience-dest'><ExperienceSection/></Element>
 				<Element id='scroll-projects-dest'><ProjectsSection/></Element>
