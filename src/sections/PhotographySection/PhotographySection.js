@@ -5,7 +5,7 @@ import Gallery from 'react-grid-gallery';
 import HorizontalPhotoCard from '../../components/Photographs/HorizontalPhotoCard';
 import VerticalPhotoCard from '../../components/Photographs/VerticalPhotoCard';
 
-import gridImages from '../../constants/grid-photos-info';
+import gridImages from '../../constants/photo-info/grid-photos-info';
 
 
 import './PhotographySection.scss';

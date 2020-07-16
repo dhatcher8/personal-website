@@ -1,5 +1,10 @@
 import React from 'react';
 
+import ExperienceCard from '../../components/Experience/ExperienceCard';
+
+import memberClicks from '../../constants/experience-info/memberclicks-info';
+
+
 import './ExperienceSection.scss';
 
 const experience_section = props => {
@@ -9,6 +14,7 @@ const experience_section = props => {
                 <h2 className="section-header">
                     experience.
                 </h2>
+                <ExperienceCard experience_details={memberClicks}/>
             </div>
         </div>
     );

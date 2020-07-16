@@ -4,7 +4,7 @@ import ImageFadIn from 'react-image-fade-in';
 import rightSlider from '../../assets/images/SVG/right-slider.svg';
 import leftSlider from '../../assets/images/SVG/left-slider.svg';
 
-import horizArray from '../../constants/horiz-photos-info';
+import horizArray from '../../constants/photo-info/horiz-photos-info';
 import './HorizontalPhotoCard.scss';
 
 class HorizontalPhotoCard extends Component {

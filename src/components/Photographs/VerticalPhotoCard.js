@@ -4,7 +4,7 @@ import ImageFadIn from 'react-image-fade-in';
 import rightSlider from '../../assets/images/SVG/right-slider.svg';
 import leftSlider from '../../assets/images/SVG/left-slider.svg';
 
-import vertArray from '../../constants/vert-photos-info';
+import vertArray from '../../constants/photo-info/vert-photos-info';
 import './VerticalPhotoCard.scss';
 
 class VerticalPhotoCard extends Component {

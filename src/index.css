@@ -31,8 +31,9 @@ code {
   src: url("assets/fonts/adihaus_italic.ttf");
   font-style: italic;
 }
+
 @font-face {
-  font-family: "Adihaus";
+  font-family: "Adihaus Oblique";
   src: url("assets/fonts/adihaus_oblique.ttf");
   font-style: oblique;
 }
