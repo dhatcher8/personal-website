@@ -62,10 +62,10 @@ class HorizontalPhotoCard extends Component {
                             <div class="date-text">{currImage.date}</div>
                         </div>
                         <div className="bottom-image-text">
-                            <div class="image-details-text">ISO {currImage.iso}</div>
+                            <div class="image-details-text">{currImage.iso}</div>
                             <div class="image-details-text">{currImage.zoom}</div>
                             <div class="image-details-text">{currImage.aperature}</div>
-                            <div class="image-details-text">{currImage.shutter} s</div>
+                            <div class="image-details-text">{currImage.shutter}</div>
                         </div>
                     </div>
                 </div>

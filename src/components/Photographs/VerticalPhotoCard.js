@@ -51,7 +51,7 @@ class VerticalPhotoCard extends Component {
         return (
             <div className="full-vert-card">
                 <img className="slider-icon" src={leftSlider} alt="" onClick={() => this.leftArrowClick()}></img>
-                <div className="image-container">
+                <div className="vertical-image-container">
                     <ImageFadIn className={vertCardClasses} src={currImage.image} opacityTransition={2}  alt=""/>
                     {/* <img className={vertCardClasses} src={currImage.image} alt=""></img> */}
                     <div class="overlay">
@@ -62,10 +62,10 @@ class VerticalPhotoCard extends Component {
                             <div class="date-text">{currImage.date}</div>
                         </div>
                         <div className="bottom-image-text">
-                            <div class="image-details-text">ISO {currImage.iso}</div>
+                            <div class="image-details-text">{currImage.iso}</div>
                             <div class="image-details-text">{currImage.zoom}</div>
                             <div class="image-details-text">{currImage.aperature}</div>
-                            <div class="image-details-text">{currImage.shutter} s</div>
+                            <div class="image-details-text">{currImage.shutter}</div>
                         </div>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ const contact_me_section = props => {
     return (
         <div className="contact-me-section-full">
             <div className="contact-me-section-body">
-                <h2 className="section-header">
+                <h2 className="contact-me-section-header">
                     contact me.
                 </h2>
             </div>

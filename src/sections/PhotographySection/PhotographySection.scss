@@ -4,12 +4,8 @@
     width: 100%;
     min-height: 100vh;
     padding-top: 100px;
+    overflow: auto;
     
-}
-
-.photography-section-body {
-    // margin-left: 30px;
-    // margin-right: 30px;
 }
 
 .photography-section-header {
@@ -46,6 +42,79 @@
     text-align: center;
 }
 
+.photo-grid-container {
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.photo-grid {
+    margin-bottom: 70px;
+}
+
+
+.grid-overlay {
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    transition: opacity .5s ease;
+    background-color: black;
+}
+
+.grid-text-overlay {
+    font-family: "Adihaus";
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+
+.grid-top-image-text {
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 80%;
+}
+
+.grid-title-text {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.grid-date-text {
+    color: white;
+    font-size: 12px;
+    text-align: left;
+}
+
+.grid-bottom-image-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+}
+
+.grid-image-details-text {
+    color: white;
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+}
+
+
 @media (min-width: 450px ) {
     .photography-subsection-body-text {
         margin-bottom: 30px;
@@ -57,5 +126,14 @@
         margin-left: 90px;
         width: 60%;
         max-width: 700px;
+    }
+    .photo-cards {
+        display: none;
+    }
+}
+
+@media (max-width: 768px ) {
+    .photo-grid-container {
+        display: none;
     }
 }

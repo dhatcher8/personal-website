@@ -11,10 +11,19 @@
     margin-right: 30px;
 }
 
-.section-header {
+.contact-me-section-header {
     font-family: "Adihaus";
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 30px;
-    margin-top: 0px;
+    margin-top: 70px;
+}
+
+@media (min-width: 769px ) {
+    .contact-me-section-header {
+        margin-left: 60px;
+        width: 60%;
+        max-width: 700px;
+    }
+
 }
