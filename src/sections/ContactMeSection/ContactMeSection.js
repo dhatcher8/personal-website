@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ContactForm from '../../components/ContactForm/ContactForm';
+
 import './ContactMeSection.scss';
 
 const contact_me_section = props => {
@@ -9,6 +11,7 @@ const contact_me_section = props => {
                 <h2 className="contact-me-section-header">
                     contact me.
                 </h2>
+                <ContactForm/>
             </div>
         </div>
     );
