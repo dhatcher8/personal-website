@@ -76,7 +76,7 @@ class App extends React.Component {
 
         return(
             <div className="contact-form-container">
-                <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                <form className="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                     <div className="name-form-group">
                         {/* <label htmlFor="name">Name</label> */}
                         <input type="text" className="form-input" value={this.state.name} onChange={this.onNameChange.bind(this)} placeholder="Name"/>
