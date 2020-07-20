@@ -89,7 +89,7 @@ class App extends React.Component {
                         {/* <label htmlFor="message">Message</label> */}
                         <textarea className="form-input-message" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} placeholder="Message"/>
                     </div>
-                    <button type="submit" className="form-submit-button">Submit</button>
+                    <button type="submit" className="form-submit-button">submit.</button>
                 </form>
                 {this.renderSuccessfulSend()}
                 {this.renderFailedSend()}

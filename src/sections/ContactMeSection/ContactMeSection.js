@@ -1,6 +1,8 @@
 import React from 'react';
 
 import ContactForm from '../../components/ContactForm/ContactForm';
+import SocialsBar from '../../components/SocialsBar/SocialsBar';
+
 
 import './ContactMeSection.scss';
 
@@ -12,6 +14,7 @@ const contact_me_section = props => {
                     contact me.
                 </h2>
                 <ContactForm/>
+                <SocialsBar/>
             </div>
         </div>
     );
