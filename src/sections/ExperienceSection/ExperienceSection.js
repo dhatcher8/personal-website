@@ -3,6 +3,7 @@ import React from 'react';
 import ExperienceCard from '../../components/Experience/ExperienceCard';
 
 import memberClicks from '../../constants/experience-info/memberclicks-info';
+import discreteTA from '../../constants/experience-info/discrete-ta-info';
 
 
 import './ExperienceSection.scss';
@@ -15,6 +16,7 @@ const experience_section = props => {
                     experience.
                 </h2>
                 <ExperienceCard experience_details={memberClicks}/>
+                <ExperienceCard experience_details={discreteTA}/>
             </div>
         </div>
     );
