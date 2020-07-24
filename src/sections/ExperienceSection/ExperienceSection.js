@@ -17,10 +17,12 @@ const experience_section = props => {
                 <h2 className="section-header">
                     experience.
                 </h2>
-                <ExperienceCard experience_details={memberClicks}/>
-                <ExperienceCard experience_details={databasesTA}/>
-                <ExperienceCard experience_details={stadiumIOPT}/>
-                <ExperienceCard experience_details={discreteTA}/>
+                <div className="experience-cards-container">
+                    <div className="exp-card-instance"><ExperienceCard experience_details={memberClicks}/></div>
+                    <div className="exp-card-instance"><ExperienceCard experience_details={databasesTA}/></div>
+                    <div className="exp-card-instance"><ExperienceCard experience_details={stadiumIOPT}/></div>
+                    <div className="exp-card-instance"><ExperienceCard experience_details={discreteTA}/></div>
+                </div>
             </div>
         </div>
     );

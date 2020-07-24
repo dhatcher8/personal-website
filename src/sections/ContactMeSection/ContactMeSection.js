@@ -14,7 +14,10 @@ const contact_me_section = props => {
                     contact me.
                 </h2>
                 <ContactForm/>
-                <SocialsBar/>
+                <div className="socials-footer">
+                    <SocialsBar/>
+                </div>
+                
             </div>
         </div>
     );
