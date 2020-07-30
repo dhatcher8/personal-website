@@ -32,6 +32,21 @@
     margin-right: 25px;
 }
 
+.project-card-wide-instance {
+    margin-left: 60px;
+}
+
+@media (min-width: 1024px ) {
+    .project-cards-container {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px ) {
+    .project-cards-wide-container {
+        display: none;
+    }
+}
 
 
 // @media (min-width: 769px ) {
@@ -39,3 +54,4 @@
 
 //     }
 // }
+

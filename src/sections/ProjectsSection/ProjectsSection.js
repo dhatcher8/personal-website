@@ -1,6 +1,8 @@
 import React from 'react';
 
 import ProjectCard from '../../components/Projects/ProjectCard';
+import ProjectCardWide from '../../components/Projects/ProjectCardWide';
+
 
 import youChooseMuse from '../../constants/projects-info/you-choose-muse-info';
 
@@ -15,6 +17,9 @@ const projects_section = props => {
                 </h2>
                 <div className="project-cards-container">
                     <div className="project-card-instance"><ProjectCard project_details={youChooseMuse}/></div>
+                </div>
+                <div className="project-cards-wide-container">
+                    <div className="project-card-wide-instance"><ProjectCardWide project_details={youChooseMuse}/></div>
                 </div>
             </div>
         </div>

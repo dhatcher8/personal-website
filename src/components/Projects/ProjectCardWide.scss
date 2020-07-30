@@ -1,0 +1,119 @@
+
+
+.full-project-container-wide {
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 35px;
+}
+
+.project-card-details-wide {
+    width: 85%;
+    height: 320px;
+    border-radius: 20px;
+    max-width: 300px;
+    align-items: center;
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    z-index: 1;
+}
+
+
+.project-text-wide {
+    font-family: "Adihaus";
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.project-top-text-wide {
+    position: relative;
+    padding-top: 20px;
+    // padding-left: 20px;
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.project-title-text-wide {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.project-role-text-wide {
+    color: black;
+    font-size: 12px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.project-location-text-wide {
+    color: black;
+    font-size: 12px;
+    text-align: left;
+    font-style: italic;
+}
+
+.project-date-text-wide {
+    padding-top: 5px;
+    color: black;
+    font-size: 12px;
+    text-align: left;
+    font-style: italic;
+}
+
+.project-body-text-wide {
+    position: relative;
+    // padding-left: 20px;
+    width: 80%;
+    height: calc(100% - 117px);
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.project-description-wide {
+    color: black;
+    font-size: 12px;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.project-tags-wide {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    justify-content: left;
+    padding-bottom: 15px;
+    list-style-type: none;
+    display: inline-block;
+    // white-space: nowrap;
+    margin-right: 20px;
+}
+
+.bottom-project-links-wide {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    // padding-left: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    text-align: left;
+}
+
+.project-links-text-wide {
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+}
