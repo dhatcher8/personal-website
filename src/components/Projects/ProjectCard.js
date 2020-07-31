@@ -19,7 +19,11 @@ class ProjectCard extends Component {
         return (
             <div className="full-project-container">
                 {console.log(this.props.project_details)}
-                <div className="full-project-card">
+                <div className="full-project-card" 
+                    style={{
+                        backgroundColor: this.props.project_details[0].backgroundColor
+                    }}>
+                    
                     <img className="project-background-image" src={this.props.project_details[0].image} alt=""/>
                     <div class="project-overlay">
                     </div>
