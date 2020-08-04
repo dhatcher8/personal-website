@@ -38,14 +38,18 @@ class ProjectCard extends Component {
                             <div className="project-description">
                                 {this.props.project_details[0].description}
                             </div>
-                            {project_tags}
-                            <div className="bottom-project-links">
-                                <a href={this.props.project_details[0].githubLink} target="_blank" rel="noopener noreferrer"><img className="project-links-text" src={githubWhite} alt="github"></img></a>
-                                <a href={this.props.project_details[0].websiteLink} target="_blank" rel="noopener noreferrer"><img className="project-links-text" src={webLinkIcon} alt="website"></img></a>
-                                
-                                {/* <div class="project-links-text">{this.props.project_details[0].githubLink}</div>
-                                <div class="project-links-text">{this.props.project_details[0].websiteLink}</div> */}
+                            <div className="project-tags-holder">
+                                {project_tags}  
                             </div>
+                            
+                            
+                        </div>
+                        <div className="bottom-project-links">
+                            <a href={this.props.project_details[0].githubLink} target="_blank" rel="noopener noreferrer"><img className="project-links-text" src={githubWhite} alt="github"></img></a>
+                            <a href={this.props.project_details[0].websiteLink} target="_blank" rel="noopener noreferrer"><img className="project-links-text" src={webLinkIcon} alt="website"></img></a>
+                            
+                            {/* <div class="project-links-text">{this.props.project_details[0].githubLink}</div>
+                            <div class="project-links-text">{this.props.project_details[0].websiteLink}</div> */}
                         </div>
                     </div>
                 </div>

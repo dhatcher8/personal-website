@@ -14,7 +14,7 @@ export default [
         "React",
         "Node.js",
         "Express",
-        "Heroku"
+        "Heroku",
         ]
     },
 ];
