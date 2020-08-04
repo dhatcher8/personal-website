@@ -7,9 +7,9 @@
 }
 
 .contact-form {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    // width: 80%;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 
 .name-form-group {
@@ -19,8 +19,9 @@
 }
 
 .form-input {
-    width: calc(100% - 24px);
+    width: calc(100% - 84px);
     max-width: 750px;
+    margin-left: 30px;
     height: 35px;
     font-family: "Adihaus";
     font-style: italic;
@@ -48,8 +49,9 @@
 }
 
 .form-input-message {
-    width: calc(100% - 24px);
+    width: calc(100% - 84px);
     max-width: 750px;
+    margin-left: 30px;
     height: 300px;
     font-family: "Adihaus";
     font-style: italic;
@@ -79,6 +81,7 @@ input::placeholder {
 }
 
 .form-submit-button {
+    margin-left: 30px;
     background-color: black;
     color: white;
     font-family: "Adihaus";
@@ -91,7 +94,7 @@ input::placeholder {
     border-radius: 10px;
     border-color: black;
     border-width: 2px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .form-submit-button:hover {
@@ -99,4 +102,49 @@ input::placeholder {
     border-width: 2px;
     border-color: black;
     color: black;
+}
+
+.successful-send-text {
+    margin-left: 30px;
+    font-family: "Adihaus";
+    font-style: italic;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-top: 11px;
+    color: black;
+    font-size: 15px;
+    
+}
+
+.error-sending-text {
+    margin-left: 30px;
+    font-family: "Adihaus";
+    font-style: italic;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-top: 11px;
+    color: red;
+    font-size: 15px;
+}
+
+@media (min-width: 769px ) {
+    .form-input {
+        width: calc(100% - 204px);
+        margin-left: 90px;
+    }
+    .form-input-message {
+        margin-left: 90px;
+        width: calc(100% - 204px);
+    }
+    .form-submit-button {
+        margin-left: 90px;
+    }
+
+    .error-sending-text  {
+        margin-left: 90px;
+    }
+
+    .successful-send-text {
+        margin-left: 90px;
+    }
 }
