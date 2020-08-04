@@ -10,11 +10,49 @@ class ProjectCard extends Component {
         super(props);
     }
 
+    renderLinks()  {
+        var gitLink = null;
+        var webLink = null;
+        if (this.props.project_details[0].githubLink !== "none") {
+            gitLink = this.props.project_details[0].githubLink;
+        }
+        if (this.props.project_details[0].websiteLink !== "none") {
+            webLink = this.props.project_details[0].websiteLink;
+        }
+        if (gitLink == null && webLink == null) {
+            return (
+                <div className="bottom-project-links">
+                </div>
+            );
+        } else if (gitLink == null) {
+            return (
+                <div className="bottom-project-links">
+                    <a href={this.props.project_details[0].websiteLink} target="_blank" rel="noopener noreferrer"><img className="project-links-text" src={webLinkIcon} alt="website"></img></a>                    
+                </div>
+            );
+        } else if (webLink == null) {
+            return (
+                <div className="bottom-project-links">
+                    <a href={this.props.project_details[0].githubLink} target="_blank" rel="noopener noreferrer"><img className="project-links-text" src={githubWhite} alt="github"></img></a>
+                </div>
+            );
+        } else {
+            return (
+                <div className="bottom-project-links">
+                    <a href={this.props.project_details[0].githubLink} target="_blank" rel="noopener noreferrer"><img className="project-links-text" src={githubWhite} alt="github"></img></a>
+                    <a href={this.props.project_details[0].websiteLink} target="_blank" rel="noopener noreferrer"><img className="project-links-text" src={webLinkIcon} alt="website"></img></a>                    
+                </div>
+            );
+        }
+
+    }
+
     render() {
 
         const project_tags = this.props.project_details[0].tags.map((tag) =>
             <li className="project-tags">{tag}</li>
             );
+        
 
         return (
             <div className="full-project-container">
@@ -44,13 +82,7 @@ class ProjectCard extends Component {
                             
                             
                         </div>
-                        <div className="bottom-project-links">
-                            <a href={this.props.project_details[0].githubLink} target="_blank" rel="noopener noreferrer"><img className="project-links-text" src={githubWhite} alt="github"></img></a>
-                            <a href={this.props.project_details[0].websiteLink} target="_blank" rel="noopener noreferrer"><img className="project-links-text" src={webLinkIcon} alt="website"></img></a>
-                            
-                            {/* <div class="project-links-text">{this.props.project_details[0].githubLink}</div>
-                            <div class="project-links-text">{this.props.project_details[0].websiteLink}</div> */}
-                        </div>
+                        {this.renderLinks()}
                     </div>
                 </div>
             </div>
