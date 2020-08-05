@@ -35,9 +35,9 @@
     margin-right: auto;
 }
 
-.scroll-icon-container {
-    height: 130px;
-}
+// .scroll-icon-container {
+//     height: 130px;
+// }
 
 @media (min-width: 450px ) {
     .about-me-body-text {
@@ -45,11 +45,19 @@
     }
 }
 
+
 @media (min-width: 769px ) {
     .about-me-body-text, .section-header {
         margin-left: 60px;
         width: 60%;
         max-width: 700px;
     }
+}
 
+@media (min-width: 1226px) {
+    .about-me-section-full {
+        min-height: 0;
+        height: 500px;
+        // max-height: 850px;
+    }
 }

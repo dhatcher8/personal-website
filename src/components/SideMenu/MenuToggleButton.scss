@@ -6,6 +6,10 @@
     cursor: pointer;
 }
 
+.menu-button-black:focus, .menu-button-black:active {
+    outline: 0;
+}
+
 @media (min-width: 769px ) {
     .menu-button-black {
         display: none;

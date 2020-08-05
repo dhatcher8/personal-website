@@ -23,10 +23,10 @@ const projects_section = props => {
                     <div className="project-card-instance"><ProjectCard project_details={movieClassificationInfo}/></div>
                     <div className="project-card-instance"><ProjectCard project_details={theaterTrackerInfo}/></div>
                 </div>
-                <div className="project-cards-wide-container">
+                {/* <div className="project-cards-wide-container">
                     <div className="project-card-wide-instance"><ProjectCardWide project_details={youChooseMuse}/></div>
                     <div className="project-card-wide-instance"><ProjectCardWide project_details={personalWebsite}/></div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

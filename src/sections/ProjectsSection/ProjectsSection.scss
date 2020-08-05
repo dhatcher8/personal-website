@@ -36,17 +36,24 @@
     margin-left: 60px;
 }
 
-@media (min-width: 1024px ) {
-    .project-cards-container {
-        display: none;
+@media (min-width: 1460px) {
+    .projects-section-full {
+        min-height: 0;
+        height: 650px;
     }
 }
 
-@media (max-width: 1023px ) {
-    .project-cards-wide-container {
-        display: none;
-    }
-}
+// @media (min-width: 1024px ) {
+//     .project-cards-container {
+//         display: none;
+//     }
+// }
+
+// @media (max-width: 1023px ) {
+//     .project-cards-wide-container {
+//         display: none;
+//     }
+// }
 
 
 // @media (min-width: 769px ) {

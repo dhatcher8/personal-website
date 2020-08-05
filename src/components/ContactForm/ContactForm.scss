@@ -97,11 +97,12 @@ input::placeholder {
     margin-bottom: 30px;
 }
 
-.form-submit-button:hover {
+.form-submit-button:hover, .form-submit-button:focus, .form-submit-button:active {
     background-color: white;
     border-width: 2px;
     border-color: black;
     color: black;
+    outline: 0;
 }
 
 .successful-send-text {
