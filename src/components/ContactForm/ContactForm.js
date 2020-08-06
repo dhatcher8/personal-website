@@ -35,6 +35,9 @@ class App extends React.Component {
         if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
             postURL = "http://localhost:3002/send";
         }
+        if (process.env.NODE_ENV === 'production') {
+            postURL = "https://sheltered-sands-87315.herokuapp.com/send";
+        }
 
         e.preventDefault();
         console.log(this.state);

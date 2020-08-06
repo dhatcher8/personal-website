@@ -40,51 +40,88 @@ if (!dev) {
     app.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
     });
+
+    var transporter = nodemailer.createTransport(transport);
+
+    transporter.verify((error, success) => {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Server is ready to take messages');
+        }
+    });
+
+    router.post('https://sheltered-sands-87315.herokuapp.com/send', (req, res, next) => {
+        var name = req.body.name;
+        var email = req.body.email;
+        var message = req.body.message;
+        var content = `Sender's Name: ${name} \nSender's Email Address: ${email} \nMessage: ${message}`
+
+        var mail = {
+            from: name,
+            to: creds.USER,
+            subject: 'Personal Website Contact Form Message',
+            text: content
+        }
+
+        transporter.sendMail(mail, (err, data) => {
+            if (err) {
+                res.json({
+                    status: 'fail'
+                });
+            } else {
+                res.json({
+                    status: 'success'
+                });
+            }
+        });
+    });
 }
 
 if (dev) {
-    app.use(morgan('dev'))
+    app.use(morgan('dev'));
+    var transporter = nodemailer.createTransport(transport);
+
+    transporter.verify((error, success) => {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Server is ready to take messages');
+        }
+    });
+
+    router.post('/send', (req, res, next) => {
+        var name = req.body.name;
+        var email = req.body.email;
+        var message = req.body.message;
+        var content = `Sender's Name: ${name} \nSender's Email Address: ${email} \nMessage: ${message}`
+
+        var mail = {
+            from: name,
+            to: creds.USER,
+            subject: 'Personal Website Contact Form Message',
+            text: content
+        }
+
+        transporter.sendMail(mail, (err, data) => {
+            if (err) {
+                res.json({
+                    status: 'fail'
+                });
+            } else {
+                res.json({
+                    status: 'success'
+                });
+            }
+        });
+    });
 }
 
 
 
 
 
-var transporter = nodemailer.createTransport(transport);
 
-transporter.verify((error, success) => {
-    if (error) {
-        console.log(error);
-    } else {
-        console.log('Server is ready to take messages');
-    }
-});
-
-router.post('/send', (req, res, next) => {
-    var name = req.body.name;
-    var email = req.body.email;
-    var message = req.body.message;
-    var content = `Sender's Name: ${name} \nSender's Email Address: ${email} \nMessage: ${message}`
-
-    var mail = {
-        from: name,
-        to: creds.USER,
-        subject: 'Personal Website Contact Form Message',
-        text: content
-    }
-
-    transporter.sendMail(mail, (err, data) => {
-        if (err) {
-            res.json({
-                status: 'fail'
-            });
-        } else {
-            res.json({
-                status: 'success'
-            });
-        }
-    });
-});
 
 
 
