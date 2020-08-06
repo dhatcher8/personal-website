@@ -3,14 +3,11 @@ const {createServer} = require('http');
 
 var express = require('express');
 
-
-
-
 var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 const creds = require('./config');
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 3002;
 
 
 const app = express();
@@ -59,7 +56,7 @@ if (!dev) {
         }
     });
 
-    router.post('https://sheltered-sands-87315.herokuapp.com/send', (req, res, next) => {
+    router.post('/send', (req, res, next) => {
         var name = req.body.name;
         var email = req.body.email;
         var message = req.body.message;
@@ -87,7 +84,17 @@ if (!dev) {
 }
 
 if (dev) {
+    // app.disable('x-powered-by');
+    app.use(compression());
     app.use(morgan('dev'));
+
+    app.use(express.static(path.resolve('../', 'build')));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve('../', 'build', 'index.html'))
+    });
+
+
     var transporter = nodemailer.createTransport(transport);
 
     transporter.verify((error, success) => {

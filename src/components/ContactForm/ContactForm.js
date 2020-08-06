@@ -32,12 +32,12 @@ class App extends React.Component {
     handleSubmit(e) {
         this.setState({sending: true, successfulSend: false});
         let postURL = window.location.origin.toString() + "/send";
-        if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-            postURL = "http://localhost:3002/send";
-        }
-        if (process.env.NODE_ENV === 'production') {
-            postURL = "https://sheltered-sands-87315.herokuapp.com/send";
-        }
+        // if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+        //     postURL = "http://localhost:3002/send";
+        // }
+        // if (process.env.NODE_ENV === 'production') {
+        //     postURL = "https://sheltered-sands-87315.herokuapp.com/send"
+        // }
 
         e.preventDefault();
         console.log(this.state);
