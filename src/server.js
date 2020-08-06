@@ -2,6 +2,11 @@ const {createServer} = require('http');
 
 
 var express = require('express');
+
+
+const app = express();
+app.use(cors());
+
 var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
@@ -25,8 +30,6 @@ const path = require('path');
 
 
 
-const app = express();
-app.use(cors());
 
 const dev = app.get('env') !== 'production'
 
