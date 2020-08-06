@@ -4,14 +4,18 @@ const {createServer} = require('http');
 var express = require('express');
 
 
-const app = express();
-app.use(cors());
+
 
 var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 const creds = require('./config');
 let port = process.env.PORT || 3002;
+
+
+const app = express();
+app.use(cors());
+
 
 var transport = {
     host: 'smtp.gmail.com',
