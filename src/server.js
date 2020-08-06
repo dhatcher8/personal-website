@@ -10,7 +10,7 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 const creds = require('./config');
-let port = process.env.PORT || 3002;
+let port = process.env.PORT || 3000;
 
 
 const app = express();
