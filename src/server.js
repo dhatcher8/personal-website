@@ -20,7 +20,7 @@ if (!dev) {
 
     app.disable('x-powered-by');
     app.use(compression());
-    app.use(morgan('common'));
+    // app.use(morgan('common'));
     console.log(path)
     app.use(express.static(path.resolve('../', 'build')));
     
@@ -84,7 +84,7 @@ if (!dev) {
 } else {
     app.disable('x-powered-by');
     app.use(compression());
-    app.use(morgan('common'));
+    // app.use(morgan('common'));
     console.log(path)
     app.use(express.static(path.resolve('../', 'build')));
     
