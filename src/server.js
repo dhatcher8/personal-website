@@ -16,6 +16,7 @@ let port = process.env.PORT || 3002;
 const app = express();
 app.use(cors());
 
+router.use(cors());
 
 var transport = {
     host: 'smtp.gmail.com',
@@ -58,7 +59,7 @@ if (!dev) {
         }
     });
 
-    app.post('/send', function(req, res) {
+    router.post('https://sheltered-sands-87315.herokuapp.com/send', (req, res, next) => {
         var name = req.body.name;
         var email = req.body.email;
         var message = req.body.message;
@@ -83,32 +84,6 @@ if (!dev) {
             }
         });
     });
-
-    // router.post('https://sheltered-sands-87315.herokuapp.com/send', (req, res, next) => {
-    //     var name = req.body.name;
-    //     var email = req.body.email;
-    //     var message = req.body.message;
-    //     var content = `Sender's Name: ${name} \nSender's Email Address: ${email} \nMessage: ${message}`
-
-    //     var mail = {
-    //         from: name,
-    //         to: creds.USER,
-    //         subject: 'Personal Website Contact Form Message',
-    //         text: content
-    //     }
-
-    //     transporter.sendMail(mail, (err, data) => {
-    //         if (err) {
-    //             res.json({
-    //                 status: 'fail'
-    //             });
-    //         } else {
-    //             res.json({
-    //                 status: 'success'
-    //             });
-    //         }
-    //     });
-    // });
 }
 
 if (dev) {
@@ -123,7 +98,7 @@ if (dev) {
         }
     });
 
-    app.post('/send', function(req, res) {
+    router.post('/send', (req, res, next) => {
         var name = req.body.name;
         var email = req.body.email;
         var message = req.body.message;
@@ -148,42 +123,7 @@ if (dev) {
             }
         });
     });
-
-    // router.post('/send', (req, res, next) => {
-    //     var name = req.body.name;
-    //     var email = req.body.email;
-    //     var message = req.body.message;
-    //     var content = `Sender's Name: ${name} \nSender's Email Address: ${email} \nMessage: ${message}`
-
-    //     var mail = {
-    //         from: name,
-    //         to: creds.USER,
-    //         subject: 'Personal Website Contact Form Message',
-    //         text: content
-    //     }
-
-    //     transporter.sendMail(mail, (err, data) => {
-    //         if (err) {
-    //             res.json({
-    //                 status: 'fail'
-    //             });
-    //         } else {
-    //             res.json({
-    //                 status: 'success'
-    //             });
-    //         }
-    //     });
-    // });
 }
-
-
-
-
-
-
-
-
-
 
 // app.use(cors());
 app.use(express.json());
