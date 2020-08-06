@@ -26,7 +26,7 @@ if (!dev) {
     
 
     const nodemailer = require('nodemailer');
-    const creds = require('./config');
+    const creds = require('./config.js');
     
     var transport = {
         host: 'smtp.gmail.com',
@@ -90,7 +90,7 @@ if (!dev) {
     
 
     const nodemailer = require('nodemailer');
-    const creds = require('./config');
+    const creds = require('./config.js');
     
     var transport = {
         host: 'smtp.gmail.com',
