@@ -11,6 +11,7 @@ class App extends React.Component {
         name: "",
         email: "",
         message: "",
+        sending: false,
         successfulSend: false,
         errorSending: false,
       }
@@ -29,27 +30,50 @@ class App extends React.Component {
     }
 
     handleSubmit(e) {
+        this.setState({sending: true, successfulSend: false});
+        let postURL = window.location.origin.toString() + "/send";
+        if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+            postURL = "http://localhost:3002/send";
+        }
+
         e.preventDefault();
         console.log(this.state);
-
-        axios({
-            method: "POST",
-            url: "http://localhost:3002/send",
-            data: this.state
-        }).then((response)=>{
-            if (response.data.status === 'success') {
-                // alert("Message Sent.");
-                this.setState({successfulSend: true});
-                this.resetForm();
-            } else if (response.data.status === 'fail') {
-                // alert("Message failed to send.");
-                this.setState({errorSending: true});
-            }
-        })
+        try {
+            axios({
+                method: "POST",
+                url: postURL,
+                data: this.state
+            }).then((response)=>{
+                if (response.data.status === 'success') {
+                    // alert("Message Sent.");
+                    this.setState({sending: false, successfulSend: true});
+                    this.resetForm();
+                } else if (response.data.status === 'fail') {
+                    // alert("Message failed to send.");
+                    this.setState({sending: false, errorSending: true});
+                }
+            })
+            .catch((err)=>{
+                this.setState({sending: false, errorSending: true});
+            });
+        } catch {
+            this.setState({sending: false, errorSending: true});
+        }
+        
     }
 
     resetForm() {
         this.setState({name: "", email: "", message: ""})
+    }
+
+    renderSending() {
+        if (this.state.sending) {
+            return(
+                <div className="successful-send-text">
+                    Sending...
+                </div>
+            );
+        }
     }
 
     renderSuccessfulSend() {
@@ -91,6 +115,7 @@ class App extends React.Component {
                     </div>
                     <button type="submit" className="form-submit-button">submit.</button>
                 </form>
+                {this.renderSending()}
                 {this.renderSuccessfulSend()}
                 {this.renderFailedSend()}
             </div>

@@ -3,6 +3,7 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 const creds = require('./config');
+let port = process.env.PORT || 3002;
 
 var transport = {
     host: 'smtp.gmail.com',
@@ -56,5 +57,5 @@ app.use('/', router);
 
 
 // console.log('Listening on port 3002');
-
-app.listen(3002);
+console.log(port);
+app.listen(port);
