@@ -1,3 +1,6 @@
+const {createServer} = require('http');
+
+
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
@@ -13,6 +16,12 @@ var transport = {
         pass: creds.PASS
     }
 }
+
+
+const compression = require('compression');
+const morgan = require('morgan');
+const path = require('path');
+
 
 var transporter = nodemailer.createTransport(transport);
 
@@ -51,11 +60,46 @@ router.post('/send', (req, res, next) => {
 });
 
 const app = express();
+
+const dev = app.get('env') !== 'production'
+
+if (!dev) {
+    app.disable('x-powered-by');
+    app.use(compression());
+    app.use(morgan('common'));
+
+    app.use(express.static(path.resolve(__dirname, 'build')));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
+    });
+}
+
+if (dev) {
+    app.use(morgan('dev'))
+}
+
+
 app.use(cors());
 app.use(express.json());
 app.use('/', router);
 
-
 // console.log('Listening on port 3002');
 console.log(port);
-app.listen(port);
+// app.listen(port);
+
+
+const server = createServer(app);
+
+server.listen(port, err => {
+    if (err) throw err;
+    
+    // console.log('Server started');
+});
+
+
+
+
+
+
+
