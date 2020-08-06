@@ -65,6 +65,44 @@ class App extends React.Component {
         
     }
 
+    handleSubmitTwo(e) {
+        this.setState({sending: true, successfulSend: false});
+        // let postURL = window.location.origin.toString() + "/send";
+
+        var postURL = 'http://localhost:3002/send';
+        if (process.env.NODE_ENV === 'production') {
+            postURL = window.location.origin.toString() + '/send';
+        }
+        e.preventDefault();
+
+        try {
+            axios({
+                method: "POST",
+                url: postURL,
+                data: {
+                    name: this.state.name,
+                    email: this.state.email,
+                    message: this.state.message
+                }
+            }).then((response)=>{
+                if (response.data.msg === 'success') {
+                    // alert("Message Sent.");
+                    this.setState({sending: false, successfulSend: true});
+                    this.resetForm();
+                } else if (response.data.msg === 'fail') {
+                    // alert("Message failed to send.");
+                    this.setState({sending: false, errorSending: true});
+                }
+            })
+            .catch((err)=>{
+                this.setState({sending: false, errorSending: true});
+            });
+        } catch {
+            this.setState({sending: false, errorSending: true});
+        }
+        
+    }
+
     resetForm() {
         this.setState({name: "", email: "", message: ""})
     }
@@ -103,7 +141,7 @@ class App extends React.Component {
 
         return(
             <div className="contact-form-container">
-                <form className="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                <form className="contact-form" onSubmit={this.handleSubmitTwo.bind(this)} method="POST">
                     <div className="name-form-group">
                         {/* <label htmlFor="name">Name</label> */}
                         <input type="text" className="form-input" value={this.state.name} onChange={this.onNameChange.bind(this)} placeholder="Name"/>
