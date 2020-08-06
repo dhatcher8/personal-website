@@ -23,6 +23,33 @@ const morgan = require('morgan');
 const path = require('path');
 
 
+
+
+const app = express();
+app.use(cors());
+
+const dev = app.get('env') !== 'production'
+
+if (!dev) {
+    app.disable('x-powered-by');
+    app.use(compression());
+    app.use(morgan('common'));
+
+    app.use(express.static(path.resolve(__dirname, 'build')));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
+    });
+}
+
+if (dev) {
+    app.use(morgan('dev'))
+}
+
+
+
+
+
 var transporter = nodemailer.createTransport(transport);
 
 transporter.verify((error, success) => {
@@ -59,28 +86,10 @@ router.post('/send', (req, res, next) => {
     });
 });
 
-const app = express();
-
-const dev = app.get('env') !== 'production'
-
-if (!dev) {
-    app.disable('x-powered-by');
-    app.use(compression());
-    app.use(morgan('common'));
-
-    app.use(express.static(path.resolve(__dirname, 'build')));
-
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
-    });
-}
-
-if (dev) {
-    app.use(morgan('dev'))
-}
 
 
-app.use(cors());
+
+// app.use(cors());
 app.use(express.json());
 app.use('/', router);
 
