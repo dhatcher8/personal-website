@@ -26,14 +26,15 @@ if (!dev) {
     
 
     const nodemailer = require('nodemailer');
-    const creds = require('./config.js');
+    const usercred = process.env['USER'];
+    const passcred = process.env['PASS'];
     
     var transport = {
         host: 'smtp.gmail.com',
         port: 587,
         auth: {
-            user: creds.USER,
-            pass: creds.PASS
+            user: usercred,
+            pass: passcred
         }
     }
 
@@ -58,7 +59,7 @@ if (!dev) {
 
         var mail = {
             from: name,
-            to: creds.USER,
+            to: usercred,
             subject: 'Personal Website Contact Form Message',
             text: content
         }
