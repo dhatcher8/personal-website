@@ -137,7 +137,7 @@ app.use(express.json());
 app.use('/', router);
 
 // console.log('Listening on port 3002');
-console.log(port);
+// console.log(port);
 // app.listen(port);
 
 

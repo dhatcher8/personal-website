@@ -32,7 +32,7 @@ const photography_section = props => {
                 </div>
             </div>
         );
-        console.log(gridImages);
+        // console.log(gridImages);
     })
 
     return (

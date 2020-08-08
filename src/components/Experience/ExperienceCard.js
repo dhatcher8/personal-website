@@ -26,7 +26,7 @@ class ExperienceCard extends Component {
 
         return (
             <div className="full-exp-container">
-                {console.log(this.props.experience_details)}
+                {/* {console.log(this.props.experience_details)} */}
                 <div className="full-exp-card">
                     <img className="exp-background-image" src={this.props.experience_details[0].image} alt=""/>
                     <div class="exp-overlay">

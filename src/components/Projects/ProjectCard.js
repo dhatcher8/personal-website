@@ -56,7 +56,7 @@ class ProjectCard extends Component {
 
         return (
             <div className="full-project-container">
-                {console.log(this.props.project_details)}
+                {/* {console.log(this.props.project_details)} */}
                 <div className="full-project-card" 
                     style={{
                         backgroundColor: this.props.project_details[0].backgroundColor

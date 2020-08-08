@@ -40,7 +40,7 @@ class App extends React.Component {
         // }
 
         e.preventDefault();
-        console.log(this.state);
+        // console.log(this.state);
         try {
             axios({
                 method: "POST",
