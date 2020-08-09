@@ -31,43 +31,6 @@ class App extends React.Component {
 
     handleSubmit(e) {
         this.setState({sending: true, successfulSend: false});
-        let postURL = window.location.origin.toString() + "/send";
-        // if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-        //     postURL = "http://localhost:3002/send";
-        // }
-        // if (process.env.NODE_ENV === 'production') {
-        //     postURL = "https://sheltered-sands-87315.herokuapp.com/send"
-        // }
-
-        e.preventDefault();
-        // console.log(this.state);
-        try {
-            axios({
-                method: "POST",
-                url: postURL,
-                data: this.state
-            }).then((response)=>{
-                if (response.data.status === 'success') {
-                    // alert("Message Sent.");
-                    this.setState({sending: false, successfulSend: true});
-                    this.resetForm();
-                } else if (response.data.status === 'fail') {
-                    // alert("Message failed to send.");
-                    this.setState({sending: false, errorSending: true});
-                }
-            })
-            .catch((err)=>{
-                this.setState({sending: false, errorSending: true});
-            });
-        } catch {
-            this.setState({sending: false, errorSending: true});
-        }
-        
-    }
-
-    handleSubmitTwo(e) {
-        this.setState({sending: true, successfulSend: false});
-        // let postURL = window.location.origin.toString() + "/send";
 
         var postURL = 'http://localhost:3002/send';
         if (process.env.NODE_ENV === 'production') {
@@ -141,17 +104,14 @@ class App extends React.Component {
 
         return(
             <div className="contact-form-container">
-                <form className="contact-form" onSubmit={this.handleSubmitTwo.bind(this)} method="POST">
+                <form className="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                     <div className="name-form-group">
-                        {/* <label htmlFor="name">Name</label> */}
                         <input type="text" className="form-input" value={this.state.name} onChange={this.onNameChange.bind(this)} placeholder="Name"/>
                     </div>
                     <div className="email-form-group">
-                        {/* <label htmlFor="exampleInputEmail1">Email address</label> */}
                         <input type="email" className="form-input" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} placeholder="Email Address"/>
                     </div>
                     <div className="message-form-group">
-                        {/* <label htmlFor="message">Message</label> */}
                         <textarea className="form-input-message" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} placeholder="Message"/>
                     </div>
                     <button type="submit" className="form-submit-button">submit.</button>

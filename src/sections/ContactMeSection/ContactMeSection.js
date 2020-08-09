@@ -16,9 +16,6 @@ const contact_me_section = props => {
                     <div className="contact-me-subsection-body-text">
                         Looking to get in touch? Feel free to shoot me a message and I'll get back to you shortly!   
                     </div>
-                    {/* <div className="photography-subsection-body-text">
-                        That being said, I hope you enjoy the moments I've had the pleasure of capturing.
-                    </div> */}
                     <ContactForm/>
                     
                 </div>

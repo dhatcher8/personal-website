@@ -53,7 +53,6 @@ class HorizontalPhotoCard extends Component {
                 <img className="slider-icon" src={leftSlider} alt="" onClick={() => this.leftArrowClick()}></img>
                 <div className="image-container">
                     <ImageFadIn className={horizCardClasses} src={currImage.image} opacityTransition={2}  alt=""/>
-                    {/* <img className={horizCardClasses} src={currImage.image} alt=""></img> */}
                     <div class="overlay">
                     </div>
                     <div className="text-overlay">

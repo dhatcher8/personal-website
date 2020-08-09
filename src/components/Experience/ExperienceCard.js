@@ -7,17 +7,7 @@ class ExperienceCard extends Component {
         super(props);
     }
 
-    state = {
-        // photo_details_displaying: true,
-	}
-	
 
-    // imageClicked = () => {
-    //     this.setState((prevState) => {
-	// 		return {photo_details_displaying: !prevState.photo_details_displaying};
-	// 	});
-    // }
-    
     render() {
 
         const bullet_points = this.props.experience_details[0].bullets.map((bullet) =>
@@ -26,7 +16,6 @@ class ExperienceCard extends Component {
 
         return (
             <div className="full-exp-container">
-                {/* {console.log(this.props.experience_details)} */}
                 <div className="full-exp-card">
                     <img className="exp-background-image" src={this.props.experience_details[0].image} alt=""/>
                     <div class="exp-overlay">

@@ -3,7 +3,6 @@ const {createServer} = require('http');
 let express = require('express');
 var cors = require('cors');
 const compression = require('compression');
-// const morgan = require('morgan');
 const path = require('path');
 let port = process.env.PORT || 3002
 let request = require('request');
@@ -20,7 +19,6 @@ if (!dev) {
 
     app.disable('x-powered-by');
     app.use(compression());
-    // app.use(morgan('common'));
     console.log(path)
     app.use(express.static(path.resolve('../', 'build')));
     
