@@ -9,9 +9,9 @@ export default [
     "location":"Atlanta, GA",
     "date":"August 2020 - Present",
     "bullets":[
-        "Hold office hours, grade course assignments, and work with other TAs to create activities for students",
-        "Helping students with questions they have by leading them to understanding the concepts not just the answer",
-        "Providing students with an equal chance to succeed"
+        "Hold online office hours where students can ask questions regarding assignments, projects, exams, or other course material",
+        "Contributing to the writing, testing, supporting, and grading of a semester long database design project",
+        "Communicate with fellow TAs on Slack to organize and discuss course content and weekly meetings"
         ]
     },
 ];

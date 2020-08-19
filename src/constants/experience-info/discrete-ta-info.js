@@ -9,9 +9,9 @@ export default [
     "location":"Atlanta, GA",
     "date":"January 2019 - May 2020",
     "bullets":[
-        "Hold office hours, teach weekly recitation, and grade course assignments",
-        "Implementing active learning techniques and encouraging collaborative learning",
-        " Utilizing my ability to communicate and empathize with others to give back to the community and to improve my own leadership skills"
+        "Hold office hours and grade course assignments over topics including induction, set and proof theory, probability, and more",
+        "Utilized active learning techniques to teach weekly recitations of up to 40 students",
+        "Filled in occasionally to give lectures and answer questions in classes of over 200 students"
         ]
     },
 ];
