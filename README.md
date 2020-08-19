@@ -1,16 +1,12 @@
-# My Personal Website
+# Drew Hatcher Personal Website
 
-<img src="src/assets/images/SVG/logo-and-title.svg" alt="drawing" width="300"/>
-
-You Choose, Muse crafts playlist recommendations from a combination of your choice of artists, tracks, and genres. See your top tracks and artists as well as your recently played tracks for inspiration.
+<img src="src/assets/images/SVG/dh-logo.svg" alt="drawing" width="300"/>
 
 ### See [My Personal Website](https://drewhatcher.herokuapp.com/) live now!
 
-## Spotify API
-
-This application uses Spotify Web API to allow users to see different aspects of their play history. The app also uses Spotify's recommendation algorithm to generate tracks similar to the user's chosen parameters and save these playlists to a user's profile.
-
 ## Development
+
+This app was built using React and Node.js, and is hosted on Heroku.
 
 To get the app up and running loacally: 
 
