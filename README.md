@@ -1,8 +1,6 @@
 # My Personal Website
 
-> Displaying Everything Drew Hatcher
-
-![](src/assets/images/SVG/logo-and-title.svg =300x)
+<img src="src/assets/images/SVG/logo-and-title.svg" alt="drawing" width="300"/>
 
 You Choose, Muse crafts playlist recommendations from a combination of your choice of artists, tracks, and genres. See your top tracks and artists as well as your recently played tracks for inspiration.
 
