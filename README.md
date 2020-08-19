@@ -2,7 +2,7 @@
 
 > Displaying Everything Drew Hatcher
 
-![](src/assets/images/SVG/dh-logo.svg)
+![](src/assets/images/SVG/logo-and-title.svg =300x)
 
 You Choose, Muse crafts playlist recommendations from a combination of your choice of artists, tracks, and genres. See your top tracks and artists as well as your recently played tracks for inspiration.
 
