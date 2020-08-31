@@ -1,14 +1,23 @@
 
-const {createServer} = require('http');
+// const {createServer} = require('http');
+import { createServer } from 'http';
 import sslRedirect from 'heroku-ssl-redirect';
-let express = require('express');
-var cors = require('cors');
-const compression = require('compression');
-const path = require('path');
+// let express = require('express');
+import express from 'express';
+// var cors = require('cors');
+import cors from 'cors';
+// const compression = require('compression');
+import compression from 'compression';
+// const path = require('path');
+import path from 'path';
 let port = process.env.PORT || 3002
-let request = require('request');
-let querystring = require('querystring');
+// let request = require('request');
+import request from 'request';
+// let querystring = require('querystring');
+import querystring from 'querystring';
 
+import nodemailer from 'nodemailer';
+import creds from './config.js';
 
 
 let app = express()
@@ -25,7 +34,8 @@ if (!dev) {
     app.use(express.static(path.resolve('../', 'build')));
     
 
-    const nodemailer = require('nodemailer');
+    // const nodemailer = require('nodemailer');
+    
     const usercred = process.env['USER'];
     const passcred = process.env['PASS'];
     
@@ -90,8 +100,9 @@ if (!dev) {
     app.use(express.static(path.resolve('../', 'build')));
     
 
-    const nodemailer = require('nodemailer');
-    const creds = require('./config.js');
+    // const nodemailer = require('nodemailer');
+    // const creds = require('./config.js');
+    
     
     var transport = {
         host: 'smtp.gmail.com',
