@@ -1,6 +1,6 @@
 
 const {createServer} = require('http');
-import sslRedirect from 'heroku-ssl-redirect';
+// import sslRedirect from 'heroku-ssl-redirect';
 let express = require('express');
 var cors = require('cors');
 const compression = require('compression');
@@ -19,7 +19,7 @@ const dev = app.get('env') !== 'production';
 if (!dev) {
 
     app.disable('x-powered-by');
-    app.use(sslRedirect());
+    // app.use(sslRedirect());
     app.use(compression());
     console.log(path)
     app.use(express.static(path.resolve('../', 'build')));
