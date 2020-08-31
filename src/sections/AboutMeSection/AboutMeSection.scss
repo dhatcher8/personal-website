@@ -35,6 +35,29 @@
     margin-right: auto;
 }
 
+
+.about-me-jpg-large {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    border-radius: 50%;
+}
+
+.about-me-jpg-small {
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 180px;
+    max-width: 375px;
+    border-radius: 50%;
+}
+
+
 // .scroll-icon-container {
 //     height: 130px;
 // }
@@ -45,12 +68,45 @@
     }
 }
 
-
 @media (min-width: 769px ) {
     .about-me-body-text, .section-header {
         margin-left: 60px;
         width: 60%;
         max-width: 700px;
+    }
+}
+
+@media (min-width: 1000px ) {
+    .about-me-jpg-small {
+        display: none;
+    }
+
+    .about-me-text-and-image {
+        display: inline-block;
+        width: 100%;
+        
+    }
+
+    .about-me-description {
+        width: 50%;
+        float: left;
+    }
+    
+    .about-me-body-text {
+        width: 90%;
+    }
+
+    .about-me-image-wide {
+        width: 50%;
+        float: right;
+        display: block;
+    }
+    
+}
+
+@media (max-width: 999px ) {
+    .about-me-image-wide {
+        display: none;
     }
 }
 
