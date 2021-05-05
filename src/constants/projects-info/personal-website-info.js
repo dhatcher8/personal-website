@@ -11,7 +11,7 @@ export default [
     "websiteLink":"https://drewhatcher.herokuapp.com/",
     "backgroundColor":"#ebebeb",
     "tags":[
-        "React",
+        "React.js",
         "Node.js",
         "Express",
         "Heroku",
