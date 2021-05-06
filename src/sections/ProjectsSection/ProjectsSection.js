@@ -3,6 +3,7 @@ import React from 'react';
 import ProjectCard from '../../components/Projects/ProjectCard';
 import ProjectCardWide from '../../components/Projects/ProjectCardWide';
 
+import ArtistVisualization from '../../constants/projects-info/artist-similarity-info';
 import youChooseMuse from '../../constants/projects-info/you-choose-muse-info';
 import personalWebsite from '../../constants/projects-info/personal-website-info';
 import movieClassificationInfo from '../../constants/projects-info/movie-classification-info';
@@ -18,6 +19,7 @@ const projects_section = props => {
                     projects.
                 </h2>
                 <div className="project-cards-container">
+                    <div className="project-card-instance"><ProjectCard project_details={ArtistVisualization}/></div>
                     <div className="project-card-instance"><ProjectCard project_details={youChooseMuse}/></div>
                     <div className="project-card-instance"><ProjectCard project_details={personalWebsite}/></div>
                     <div className="project-card-instance"><ProjectCard project_details={movieClassificationInfo}/></div>
