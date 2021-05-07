@@ -9,6 +9,7 @@ export default [
     "description":"A user focused data science project that utilizes two Kaggle datasets along with algorithms such as KNN to find an artist's most similar artists based on a user selected metric.",
     "githubLink":"none",
     "websiteLink":"https://colab.research.google.com/drive/15iMDki5B58ub0LvVLd_CS9UNT7sDqUb8?usp=sharing",
+    "pdfLink":"none",
     "backgroundColor":"#202020",
     "tags":[
         "Spotify Web API",

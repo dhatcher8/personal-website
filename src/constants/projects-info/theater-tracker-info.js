@@ -9,6 +9,7 @@ export default [
     "description":"Developed the database schema and stored procedures for an app that allows users to see local movie theater showings and track their visits.",
     "githubLink":"none",
     "websiteLink":"none",
+    "pdfLink":"none",
     "backgroundColor":"#DB4040",
     "tags":[
         "MySQL",
