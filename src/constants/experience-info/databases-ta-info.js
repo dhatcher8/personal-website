@@ -5,7 +5,7 @@ export default [
     {
     "image":GeorgiaTech,
     "title":"Georgia Tech College of Computing",
-    "role":"Relational Databases TA",
+    "role":"Relational Databases Graduate TA",
     "location":"Atlanta, GA",
     "date":"August 2020 - Present",
     "bullets":[

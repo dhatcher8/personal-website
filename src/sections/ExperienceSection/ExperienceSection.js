@@ -2,6 +2,7 @@ import React from 'react';
 
 import ExperienceCard from '../../components/Experience/ExperienceCard';
 
+import mcKesson from '../../constants/experience-info/mckesson-info';
 import memberClicks from '../../constants/experience-info/memberclicks-info';
 import databasesTA from '../../constants/experience-info/databases-ta-info';
 import stadiumIOPT from '../../constants/experience-info/stadium-iopt-info';
@@ -18,6 +19,7 @@ const experience_section = props => {
                     experience.
                 </h2>
                 <div className="experience-cards-container">
+                    <div className="exp-card-instance"><ExperienceCard experience_details={mcKesson}/></div>
                     <div className="exp-card-instance"><ExperienceCard experience_details={memberClicks}/></div>
                     <div className="exp-card-instance"><ExperienceCard experience_details={databasesTA}/></div>
                     <div className="exp-card-instance"><ExperienceCard experience_details={stadiumIOPT}/></div>
