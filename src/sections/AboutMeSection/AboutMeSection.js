@@ -14,10 +14,10 @@ const about_me_section = props => {
                 <div className="about-me-text-and-image">
                     <div className="about-me-description">
                         <p className="about-me-body-text">
-                            Hi, nice to meet you! My name is Drew Hatcher. I’m currently a 4th year Computer Science student at Georgia Tech and will be starting a Master’s in Computer Science in the Spring of 2021. My passion in school outside of learning is teaching. For the past three semester’s I’ve been a teaching assistant for Discrete Mathematics and I plan to TA database design for the next three semesters. 
+                            Hi, nice to meet you! My name is Drew Hatcher. I’m currently a Master's student in Computer Science at Georgia Tech with a specialization in Machine Learning, graduating in December of 2021. My passion in school outside of learning is teaching. I'm coming up on my sixth semester as a teaching assistant, where the first three semesters I taught Discrete Mathematics and the latter three I've served as a graduate TA for Georgia Tech's Database Design course.
                         </p>
                         <p className="about-me-body-text">
-                            I’m persuing a career in software development with an interest in back-end work. Outside of my career I have a passion for art, namely photography and graphic design.
+                            I’m persuing a career in Data Science with a Bachelor's Degree in Computer Science and a background in Machine Learning. As with Data Science, I also have a passion for Back-End Development work. Outside of my career I have a passion for art, namely photography and graphic design.
                         </p>
                         <p className="about-me-body-text">
                             Keep scrolling to learn more about me!
