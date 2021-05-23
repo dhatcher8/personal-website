@@ -33,6 +33,16 @@ export default [
     },
 
     {
+    "image":CaliforniaSunset,
+    "title":"California Sunset",
+    "date":"July 19th, 2020",
+    "iso":"ISO 200",
+    "zoom":"50 mm",
+    "aperature":"f / 3.5",
+    "shutter":"1 / 250 s"
+    }, 
+
+    {
     "image":I85JPG,
     "title":"I-85",
     "date":"March 15th, 2018",
@@ -60,6 +70,16 @@ export default [
     "zoom":"24 mm",
     "aperature":"f / 4",
     "shutter":"30 s"
+    },
+
+    {
+    "image":LazyDay,
+    "title":"Lazy Day",
+    "date":"July 19th, 2020",
+    "iso":"ISO 100",
+    "zoom":"50 mm",
+    "aperature":"f / 11",
+    "shutter":"1 / 400 s"
     },
 
     {
@@ -91,6 +111,16 @@ export default [
     "aperature":"",
     "shutter":""
     },
+
+    {
+    "image":LaJolla,
+    "title":"La Jolla",
+    "date":"July 19th, 2020",
+    "iso":"ISO 100",
+    "zoom":"50 mm",
+    "aperature":"f / 11",
+    "shutter":"1 / 400 s"
+    },  
 
     {
     "image":GTSnowDay,
@@ -143,6 +173,17 @@ export default [
     },
 
     {
+    "image":Buzz,
+    "title":"Buzz",
+    "date":"October 10th, 2020",
+    "iso":"ISO 200",
+    "zoom":"50 mm",
+    "aperature":"f / 4.5",
+    "shutter":"1 / 400 s"
+    },   
+
+
+    {
     "image":RoundBaldSunrise,
     "title":"Round Bald Sunrise",
     "date":"June 10th, 2020",
@@ -150,6 +191,16 @@ export default [
     "zoom":"50 mm",
     "aperature":"f / 4.0",
     "shutter":"1 / 200 s"
+    },
+
+    {
+    "image":ATasteOfRomance,
+    "title":"A Taste of Romance",
+    "date":"July 22nd, 2020",
+    "iso":"ISO 800",
+    "zoom":"50 mm",
+    "aperature":"f / 2.5",
+    "shutter":"1 / 125 s"
     },
 
     {
@@ -162,5 +213,14 @@ export default [
     "shutter":"1 / 125 s"
     },
 
-    
+    {
+    "image":ProductionInProgress,
+    "title":"Production In Progress",
+    "date":"February 2nd, 2021",
+    "iso":"ISO 1600",
+    "zoom":"50 mm",
+    "aperature":"f / 2.0",
+    "shutter":"1 / 160 s"
+    },
+
 ];

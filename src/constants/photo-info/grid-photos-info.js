@@ -27,6 +27,18 @@ import Homecoming from '../../assets/images/photography/vertical/homecoming.jpg'
 import ToBeSeen from '../../assets/images/photography/vertical/to-be-seen.jpg';
 import SkyOnFire from '../../assets/images/photography/vertical/sky-on-fire.jpg';
 import Graduation from '../../assets/images/photography/vertical/graduation.jpg';
+import BlueHourBehavior from '../../assets/images/photography/vertical/blue-hour-behavior.jpg';
+import ChasingWaterfalls from '../../assets/images/photography/vertical/chasing-waterfalls.jpg';
+import PrivateJungle from '../../assets/images/photography/vertical/private-jungle.jpg';
+import StorefrontWindows from '../../assets/images/photography/vertical/storefront-windows.jpg';
+import Suspension from '../../assets/images/photography/vertical/suspension.jpg';
+import VeiledRadiance from '../../assets/images/photography/vertical/veiled-radiance.jpg';
+import ATasteOfRomance from '../../assets/images/photography/horizontal/a-taste-of-romance.jpg';
+import Buzz from '../../assets/images/photography/horizontal/buzz.jpg';
+import CaliforniaSunset from '../../assets/images/photography/horizontal/california-sunset.jpg';
+import LaJolla from '../../assets/images/photography/horizontal/la-jolla.jpg';
+import LazyDay from '../../assets/images/photography/horizontal/lazy-day.jpg';
+import ProductionInProgress from '../../assets/images/photography/horizontal/production-in-progress.jpg';
 
 
 export default [
@@ -54,6 +66,32 @@ export default [
     "zoom":"50 mm",
     "aperature":"f / 2.5",
     "shutter":"1 / 250 s"
+    },
+
+    {
+    "src":CaliforniaSunset,
+    "thumbnail":CaliforniaSunset,
+    "thumbnailWidth": 300,
+    "thumbnailHeight": 200,
+    "title":"California Sunset",
+    "date":"July 19th, 2020",
+    "iso":"ISO 200",
+    "zoom":"50 mm",
+    "aperature":"f / 3.5",
+    "shutter":"1 / 250 s"
+    },   
+
+    {
+    "src":Suspension,
+    "thumbnail":Suspension,
+    "thumbnailWidth": 200,
+    "thumbnailHeight": 300,
+    "title":"Suspension",
+    "date":"May 14th, 2021",
+    "iso":"ISO 100",
+    "zoom":"50 mm",
+    "aperature":"f / 5.0",
+    "shutter":"1 / 1250 s"
     },
 
     {
@@ -135,6 +173,32 @@ export default [
     },
 
     {
+    "src":LazyDay,
+    "thumbnail":LazyDay,
+    "thumbnailWidth": 300,
+    "thumbnailHeight": 200,
+    "title":"Lazy Day",
+    "date":"July 19th, 2020",
+    "iso":"ISO 100",
+    "zoom":"50 mm",
+    "aperature":"f / 11",
+    "shutter":"1 / 400 s"
+    },
+
+    {
+    "src":BlueHourBehavior,
+    "thumbnail":BlueHourBehavior,
+    "thumbnailWidth": 200,
+    "thumbnailHeight": 300,
+    "title":"Blue Hour Behavior",
+    "date":"August 11th, 2020",
+    "iso":"ISO 200",
+    "zoom":"50 mm",
+    "aperature":"f / 2.0",
+    "shutter":"1 / 320 s"
+    },
+
+    {
     "src":CerealAndSpirits,
     "thumbnail":CerealAndSpirits,
     "thumbnailWidth": 300,
@@ -210,6 +274,32 @@ export default [
     "zoom":"50 mm",
     "aperature":"f / 5.0",
     "shutter":"1 / 320 s"
+    },
+
+    {
+    "src":LaJolla,
+    "thumbnail":LaJolla,
+    "thumbnailWidth": 300,
+    "thumbnailHeight": 200,
+    "title":"La Jolla",
+    "date":"July 19th, 2020",
+    "iso":"ISO 100",
+    "zoom":"50 mm",
+    "aperature":"f / 11",
+    "shutter":"1 / 400 s"
+    },  
+
+    {
+    "src":ChasingWaterfalls,
+    "thumbnail":ChasingWaterfalls,
+    "thumbnailWidth": 200,
+    "thumbnailHeight": 300,
+    "title":"Chasing Waterfalls",
+    "date":"January 5th, 2021",
+    "iso":"ISO 200",
+    "zoom":"50 mm",
+    "aperature":"f / 4.0",
+    "shutter":"1 / 250 s"
     },
 
     {
@@ -343,6 +433,33 @@ export default [
     },
 
     {
+    "src":Buzz,
+    "thumbnail":Buzz,
+    "thumbnailWidth": 300,
+    "thumbnailHeight": 200,
+    "title":"Buzz",
+    "date":"October 10th, 2020",
+    "iso":"ISO 200",
+    "zoom":"50 mm",
+    "aperature":"f / 4.5",
+    "shutter":"1 / 400 s"
+    },
+
+    {
+    "src":PrivateJungle,
+    "thumbnail":PrivateJungle,
+    "thumbnailWidth": 200,
+    "thumbnailHeight": 300,
+    "title":"Private Jungle",
+    "date":"July 19th, 2020",
+    "iso":"ISO 400",
+    "zoom":"50 mm",
+    "aperature":"f / 3.2",
+    "shutter":"1 / 200 s"
+    },
+
+
+    {
     "src":RoundBaldSunrise,
     "thumbnail":RoundBaldSunrise,
     "thumbnailWidth": 300,
@@ -369,6 +486,32 @@ export default [
     },
 
     {
+    "src":ATasteOfRomance,
+    "thumbnail":ATasteOfRomance,
+    "thumbnailWidth": 300,
+    "thumbnailHeight": 200,
+    "title":"A Taste of Romance",
+    "date":"July 22nd, 2020",
+    "iso":"ISO 800",
+    "zoom":"50 mm",
+    "aperature":"f / 2.5",
+    "shutter":"1 / 125 s"
+    },
+
+    {
+    "src":StorefrontWindows,
+    "thumbnail":StorefrontWindows,
+    "thumbnailWidth": 200,
+    "thumbnailHeight": 300,
+    "title":"Storefront Windows",
+    "date":"August 11th, 2020",
+    "iso":"ISO 100",
+    "zoom":"50 mm",
+    "aperature":"f / 2.2",
+    "shutter":"1 / 1250 s"
+    },
+
+    {
     "src":SiblingReunion,
     "thumbnail":SiblingReunion,
     "thumbnailWidth": 300,
@@ -391,6 +534,32 @@ export default [
     "iso":"ISO 100",
     "zoom":"50 mm",
     "aperature":"f / 3.5",
+    "shutter":"1 / 250 s"
+    },
+
+    {
+    "src":ProductionInProgress,
+    "thumbnail":ProductionInProgress,
+    "thumbnailWidth": 300,
+    "thumbnailHeight": 200,
+    "title":"Production In Progress",
+    "date":"February 2nd, 2021",
+    "iso":"ISO 1600",
+    "zoom":"50 mm",
+    "aperature":"f / 2.0",
+    "shutter":"1 / 160 s"
+    },
+
+    {
+    "src":VeiledRadiance,
+    "thumbnail":VeiledRadiance,
+    "thumbnailWidth": 200,
+    "thumbnailHeight": 300,
+    "title":"Veiled Radiance",
+    "date":"August 11th, 2020",
+    "iso":"ISO 200",
+    "zoom":"50 mm",
+    "aperature":"f / 2.0",
     "shutter":"1 / 250 s"
     },
 

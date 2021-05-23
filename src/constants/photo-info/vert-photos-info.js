@@ -17,7 +17,7 @@ import BlueHourBehavior from '../../assets/images/photography/vertical/blue-hour
 import ChasingWaterfalls from '../../assets/images/photography/vertical/chasing-waterfalls.jpg';
 import PrivateJungle from '../../assets/images/photography/vertical/private-jungle.jpg';
 import StorefrontWindows from '../../assets/images/photography/vertical/storefront-windows.jpg';
-import Suspension from '../../assets/images/photography/vertical/blue-hour-suspension.jpg';
+import Suspension from '../../assets/images/photography/vertical/suspension.jpg';
 import VeiledRadiance from '../../assets/images/photography/vertical/veiled-radiance.jpg';
 
 
@@ -32,6 +32,16 @@ export default [
     "zoom":"50 mm",
     "aperature":"f / 2.5",
     "shutter":"1 / 250 s"
+    },
+
+    {
+    "image":Suspension,
+    "title":"Suspension",
+    "date":"May 14th, 2021",
+    "iso":"ISO 100",
+    "zoom":"50 mm",
+    "aperature":"f / 5.0",
+    "shutter":"1 / 1250 s"
     },
 
     {
@@ -65,6 +75,16 @@ export default [
     },
 
     {
+    "image":BlueHourBehavior,
+    "title":"Blue Hour Behavior",
+    "date":"August 11th, 2020",
+    "iso":"ISO 200",
+    "zoom":"50 mm",
+    "aperature":"f / 2.0",
+    "shutter":"1 / 320 s"
+    },
+
+    {
     "image":GoForth,
     "title":"Go Forth",
     "date":"June 9th, 2020",
@@ -92,6 +112,16 @@ export default [
     "zoom":"50 mm",
     "aperature":"f / 5.0",
     "shutter":"1 / 320 s"
+    },
+
+    {
+    "image":ChasingWaterfalls,
+    "title":"Chasing Waterfalls",
+    "date":"January 5th, 2021",
+    "iso":"ISO 200",
+    "zoom":"50 mm",
+    "aperature":"f / 4.0",
+    "shutter":"1 / 250 s"
     },
 
     {
@@ -145,6 +175,16 @@ export default [
     },
 
     {
+    "image":PrivateJungle,
+    "title":"Private Jungle",
+    "date":"July 19th, 2020",
+    "iso":"ISO 400",
+    "zoom":"50 mm",
+    "aperature":"f / 3.2",
+    "shutter":"1 / 200 s"
+    },
+
+    {
     "image":SkyOnFire,
     "title":"Sky on Fire",
     "date":"December 3rd, 2018",
@@ -155,12 +195,32 @@ export default [
     },
 
     {
+    "image":StorefrontWindows,
+    "title":"Storefront Windows",
+    "date":"August 11th, 2020",
+    "iso":"ISO 100",
+    "zoom":"50 mm",
+    "aperature":"f / 2.2",
+    "shutter":"1 / 1250 s"
+    },
+
+    {
     "image":Graduation,
     "title":"Graduation",
     "date":"April 30th, 2020",
     "iso":"ISO 100",
     "zoom":"50 mm",
     "aperature":"f / 3.5",
+    "shutter":"1 / 250 s"
+    },
+
+    {
+    "image":VeiledRadiance,
+    "title":"Veiled Radiance",
+    "date":"August 11th, 2020",
+    "iso":"ISO 200",
+    "zoom":"50 mm",
+    "aperature":"f / 2.0",
     "shutter":"1 / 250 s"
     },
     
