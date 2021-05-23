@@ -13,6 +13,14 @@ import Homecoming from '../../assets/images/photography/vertical/homecoming.jpg'
 import ToBeSeen from '../../assets/images/photography/vertical/to-be-seen.jpg';
 import SkyOnFire from '../../assets/images/photography/vertical/sky-on-fire.jpg';
 import Graduation from '../../assets/images/photography/vertical/graduation.jpg';
+import BlueHourBehavior from '../../assets/images/photography/vertical/blue-hour-behavior.jpg';
+import ChasingWaterfalls from '../../assets/images/photography/vertical/chasing-waterfalls.jpg';
+import PrivateJungle from '../../assets/images/photography/vertical/private-jungle.jpg';
+import StorefrontWindows from '../../assets/images/photography/vertical/storefront-windows.jpg';
+import Suspension from '../../assets/images/photography/vertical/blue-hour-suspension.jpg';
+import VeiledRadiance from '../../assets/images/photography/vertical/veiled-radiance.jpg';
+
+
 
 
 export default [

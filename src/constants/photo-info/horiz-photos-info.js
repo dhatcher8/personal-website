@@ -13,6 +13,12 @@ import BagelsAtSunrise from '../../assets/images/photography/horizontal/bagels-a
 import MidnightMacchiato from '../../assets/images/photography/horizontal/midnight-macchiato.jpg';
 import RoundBaldSunrise from '../../assets/images/photography/horizontal/round-bald-sunrise.jpg';
 import SiblingReunion from '../../assets/images/photography/horizontal/sibling-reunion.jpg';
+import ATasteOfRomance from '../../assets/images/photography/horizontal/a-taste-of-romance.jpg';
+import Buzz from '../../assets/images/photography/horizontal/buzz.jpg';
+import CaliforniaSunset from '../../assets/images/photography/horizontal/california-sunset.jpg';
+import LaJolla from '../../assets/images/photography/horizontal/la-jolla.jpg';
+import LazyDay from '../../assets/images/photography/horizontal/lazy-day.jpg';
+import ProductionInProgress from '../../assets/images/photography/horizontal/production-in-progress.jpg';
 
 
 export default [
