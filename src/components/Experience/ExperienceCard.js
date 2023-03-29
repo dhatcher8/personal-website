@@ -7,7 +7,6 @@ class ExperienceCard extends Component {
         super(props);
     }
 
-
     render() {
 
         const bullet_points = this.props.experience_details[0].bullets.map((bullet) =>

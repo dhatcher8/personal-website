@@ -38,7 +38,6 @@ class VerticalPhotoCard extends Component {
     }
     
 
-    
     render() {
 
         let currImage = vertArray[this.state.image_index];
