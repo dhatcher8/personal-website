@@ -4,7 +4,7 @@ import StadiumIOPT from '../../assets/images/experience/stadium-iopt.jpg';
 export default [
     {
     "image":StadiumIOPT,
-    "title":"Stadium IOPT VIP",
+    "title":"Stadium IOPT VIP at Georgia Tech",
     "role":"Back End Developer",
     "location":"Atlanta, GA",
     "date":"January 2019 - May 2020",

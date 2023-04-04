@@ -7,7 +7,7 @@ export default [
     "image":AsianHateClassifier,
     "title":"Anti-Asian Hate Tweet Classifier",
     "date":"March - April 2021",
-    "description":"This project is an expansion of research done by CLAWS Georgia Tech to classify tweets as hateful, counter hateful, or neutral in respect to anti-asian rhetoric surrounding the COVID-19 pandemic.",
+    "description":"This project is an expansion of research done by CLAWS Georgia Tech to classify tweets as hateful, counter hateful, or neutral with respect to anti-asian rhetoric surrounding the COVID-19 pandemic.",
     "githubLink":"none",
     "websiteLink":"none",
     "pdfLink":asianHatePaperPDF,
