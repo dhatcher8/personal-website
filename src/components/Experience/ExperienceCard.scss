@@ -86,7 +86,7 @@
     text-align: left;
 }
 
-.exp-role-text {
+.exp-company-text {
     color: white;
     font-size: 13px;
     text-align: left;
@@ -97,6 +97,9 @@
     color: white;
     font-size: 13px;
     text-align: left;
+}
+
+.exp-location-text-italic {
     font-style: italic;
 }
 
@@ -110,7 +113,7 @@
 .exp-body-text {
     position: relative;
     padding-left: 20px;
-    width: 80%;
+    padding-right: 20px;
     padding-bottom: 20px;
 }
 

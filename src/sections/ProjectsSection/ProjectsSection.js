@@ -20,10 +20,10 @@ const projects_section = props => {
                     projects.
                 </h2>
                 <div className="project-cards-container">
-                    <div className="project-card-instance"><ProjectCard project_details={ArtistVisualization}/></div>
-                    <div className="project-card-instance"><ProjectCard project_details={AsianHateClassifier}/></div>
                     <div className="project-card-instance"><ProjectCard project_details={youChooseMuse}/></div>
                     <div className="project-card-instance"><ProjectCard project_details={personalWebsite}/></div>
+                    <div className="project-card-instance"><ProjectCard project_details={ArtistVisualization}/></div>
+                    <div className="project-card-instance"><ProjectCard project_details={AsianHateClassifier}/></div>
                     <div className="project-card-instance"><ProjectCard project_details={movieClassificationInfo}/></div>
                     <div className="project-card-instance"><ProjectCard project_details={theaterTrackerInfo}/></div>
                 </div>

@@ -21,9 +21,12 @@ class ExperienceCard extends Component {
                     </div>
                     <div className="exp-text-overlay">
                         <div className="exp-top-text">
-                            <div className="exp-title-text">{this.props.experience_details[0].title}</div>
-                            <div className="exp-role-text">{this.props.experience_details[0].role}</div>
-                            <div className="exp-location-text">{this.props.experience_details[0].location}</div>
+                            <div className="exp-title-text">{this.props.experience_details[0].role}</div>
+                            <div className="exp-company-text">{this.props.experience_details[0].title}</div>
+                            <div className="exp-location-text">
+                                <span className="exp-location-text-italic">{this.props.experience_details[0].location}</span>
+                                {this.props.experience_details[0].location_supplemental ? ` (${this.props.experience_details[0].location_supplemental})` : ""}
+                            </div>
                             <div className="exp-date-text">{this.props.experience_details[0].date}</div>
                         </div>
                         <div className="exp-body-text">

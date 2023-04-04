@@ -42,7 +42,7 @@ const photography_section = props => {
                     photography.
                 </h2>
                 <div className="photography-subsection-body-text">
-                    Photography is my outlet to temporarily free my mind whenever I need a break from stress or wish to express myself creatively. It allows me to create whatever makes me happy with those that make me happy and potentially bring happiness to others.   
+                    Photography is my outlet to temporarily free my mind whenever I need a break from stress or wish to express myself creatively. It allows me to create whatever makes me happy with those that make me happy, while potentially spreading that happiness to others.   
                 </div>
                 <div className="photography-subsection-body-text">
                     That being said, I hope you enjoy the moments I've had the pleasure of capturing.
