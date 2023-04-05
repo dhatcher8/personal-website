@@ -156,7 +156,7 @@ export default [
 
     {
     "image":ScopeCreep,
-    "title":"ScopeCreep",
+    "title":"Scope Creep",
     "date":"May 28th, 2022",
     "iso":"ISO 100",
     "zoom":"50 mm",

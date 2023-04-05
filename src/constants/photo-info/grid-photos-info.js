@@ -398,7 +398,7 @@ export default [
     "thumbnail":ScopeCreep,
     "thumbnailWidth": 200,
     "thumbnailHeight": 300,
-    "title":"ScopeCreep",
+    "title":"Scope Creep",
     "date":"May 28th, 2022",
     "iso":"ISO 100",
     "zoom":"50 mm",
