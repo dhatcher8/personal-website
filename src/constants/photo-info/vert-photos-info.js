@@ -2,14 +2,14 @@
 import MySnaggletooth from '../../assets/images/photography/vertical/my-snaggletooth.jpg';
 import Warmth from '../../assets/images/photography/vertical/warmth.jpg';
 import Dreamy from '../../assets/images/photography/vertical/dreamy.jpg';
-import Prom from '../../assets/images/photography/vertical/prom.jpg';
+import TheSlowingBustle from '../../assets/images/photography/vertical/the-slowing-bustle.jpg';
 import GoForth from '../../assets/images/photography/vertical/go-forth.jpg';
-import SantasWorkshop from '../../assets/images/photography/vertical/santas-workshop.jpg';
+import KingKoj from '../../assets/images/photography/vertical/king-koj.jpg';
 import TheThickOfNature from '../../assets/images/photography/vertical/the-thick-of-nature.jpg';
-import VelvetAndGlass from '../../assets/images/photography/vertical/velvet-and-glass.jpg';
+import OceanAve from '../../assets/images/photography/vertical/ocean-ave.jpg';
 import HeadInTheClouds from '../../assets/images/photography/vertical/head-in-the-clouds.jpg';
-import YoungProfessional from '../../assets/images/photography/vertical/young-professional.jpg';
-import Homecoming from '../../assets/images/photography/vertical/homecoming.jpg';
+import WearisomeVentures from '../../assets/images/photography/vertical/wearisome-ventures.jpg';
+import ScopeCreep from '../../assets/images/photography/vertical/scope-creep.jpg';
 import ToBeSeen from '../../assets/images/photography/vertical/to-be-seen.jpg';
 import SkyOnFire from '../../assets/images/photography/vertical/sky-on-fire.jpg';
 import Graduation from '../../assets/images/photography/vertical/graduation.jpg';
@@ -65,12 +65,12 @@ export default [
     },
 
     {
-    "image":Prom,
-    "title":"Prom",
-    "date":"April 13th, 2019",
-    "iso":"ISO 100",
+    "image":TheSlowingBustle,
+    "title":"The Slowing Bustle",
+    "date":"May 23rd, 2022",
+    "iso":"ISO 1600",
     "zoom":"50 mm",
-    "aperature":"f / 4.5",
+    "aperature":"f / 3.2",
     "shutter":"1 / 250 s"
     },
 
@@ -95,13 +95,13 @@ export default [
     },
 
     {
-    "image":SantasWorkshop,
-    "title":"Santa's Workshop",
-    "date":"December 7th, 2018",
-    "iso":"ISO 400",
+    "image":KingKoj,
+    "title":"King Koj",
+    "date":"August 14th, 2022",
+    "iso":"ISO 200",
     "zoom":"50 mm",
-    "aperature":"f / 2.8",
-    "shutter":"1 / 160 s"
+    "aperature":"f / 5",
+    "shutter":"1 / 1250 s"
     },
 
     {
@@ -125,13 +125,13 @@ export default [
     },
 
     {
-    "image":VelvetAndGlass,
-    "title":"Velvet and Glass",
-    "date":"December 23rd, 2019",
-    "iso":"ISO 1600",
+    "image":OceanAve,
+    "title":"Ocean Ave",
+    "date":"June 26th, 2021",
+    "iso":"ISO 200",
     "zoom":"50 mm",
-    "aperature":"f / 1.8",
-    "shutter":"1 / 160 s"
+    "aperature":"f / 4",
+    "shutter":"1 / 400 s"
     },
 
     {
@@ -145,23 +145,23 @@ export default [
     },
 
     {
-    "image":YoungProfessional,
-    "title":"Young Professional",
-    "date":"March 1st, 2019",
+    "image":WearisomeVentures,
+    "title":"Wearisome Ventures",
+    "date":"February 3rd, 2022",
     "iso":"ISO 200",
     "zoom":"50 mm",
-    "aperature":"f / 1.8",
-    "shutter":"1 / 200 s"
+    "aperature":"f / 4",
+    "shutter":"1 / 400 s"
     },
 
     {
-    "image":Homecoming,
-    "title":"Homecoming",
-    "date":"October 20th, 2020",
-    "iso":"ISO 400",
-    "zoom":"22 mm",
-    "aperature":"f / 4.5",
-    "shutter":"1 / 125 s"
+    "image":ScopeCreep,
+    "title":"ScopeCreep",
+    "date":"May 28th, 2022",
+    "iso":"ISO 100",
+    "zoom":"50 mm",
+    "aperature":"f / 5",
+    "shutter":"1 / 800 s"
     },
 
     {

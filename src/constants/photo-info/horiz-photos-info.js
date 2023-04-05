@@ -4,13 +4,13 @@ import I85JPG from '../../assets/images/photography/horizontal/i85.jpg';
 import SoftAndSerene from '../../assets/images/photography/horizontal/soft-and-serene.jpg';
 import MagicBeyondTheBend from '../../assets/images/photography/horizontal/magic-beyond-the-bend.jpg';
 import CerealAndSpirits from '../../assets/images/photography/horizontal/cereal-and-spirits.jpg';
-import ATLNights from '../../assets/images/photography/horizontal/atl-nights.jpg';
+import JanesCarousel from '../../assets/images/photography/horizontal/janes-carousel.jpg';
 import ImReady from '../../assets/images/photography/horizontal/im-ready.jpg';
-import GTSnowDay from '../../assets/images/photography/horizontal/gt-snow-day.jpg';
+import SpecOps from '../../assets/images/photography/horizontal/spec-ops.jpg';
 import Euphoria from '../../assets/images/photography/horizontal/euphoria.jpg';
 import BloodMoon from '../../assets/images/photography/horizontal/blood-moon.jpg';
 import BagelsAtSunrise from '../../assets/images/photography/horizontal/bagels-at-sunrise.jpg';
-import MidnightMacchiato from '../../assets/images/photography/horizontal/midnight-macchiato.jpg';
+import SuitedDrip from '../../assets/images/photography/horizontal/suited-drip.jpg';
 import RoundBaldSunrise from '../../assets/images/photography/horizontal/round-bald-sunrise.jpg';
 import SiblingReunion from '../../assets/images/photography/horizontal/sibling-reunion.jpg';
 import ATasteOfRomance from '../../assets/images/photography/horizontal/a-taste-of-romance.jpg';
@@ -93,13 +93,13 @@ export default [
     },
 
     {
-    "image":ATLNights,
-    "title":"ATL Nights",
-    "date":"November 30th, 2018",
-    "iso":"ISO 1600",
+    "image":JanesCarousel,
+    "title":"Jane's Carousel",
+    "date":"May 28th, 2022",
+    "iso":"ISO 800",
     "zoom":"50 mm",
-    "aperature":"f / 1.8",
-    "shutter":"1 / 60 s"
+    "aperature":"f / 4",
+    "shutter":"1 / 400 s"
     },
 
     {
@@ -123,13 +123,13 @@ export default [
     },  
 
     {
-    "image":GTSnowDay,
-    "title":"GT Snow Day",
-    "date":"January 17th, 2018",
-    "iso":"ISO 400",
-    "zoom":"55 mm",
-    "aperature":"f / 5.6",
-    "shutter":"1 / 2000 s"
+    "image":SpecOps,
+    "title":"Spec Ops",
+    "date":"August 7th, 2022",
+    "iso":"ISO 200",
+    "zoom":"70 mm",
+    "aperature":"f / 4.5",
+    "shutter":"1 / 320 s"
     },
 
     {
@@ -163,13 +163,13 @@ export default [
     },
 
     {
-    "image":MidnightMacchiato,
-    "title":"Midnight Macchiato",
-    "date":"December 7th, 2018",
-    "iso":"ISO 800",
-    "zoom":"50 mm",
-    "aperature":"f / 2.8",
-    "shutter":"1 / 160 s"
+    "image":SuitedDrip,
+    "title":"Suited Drip",
+    "date":"June 28th, 2021",
+    "iso":"ISO 100",
+    "zoom":"270 mm",
+    "aperature":"f / 6.3",
+    "shutter":"1 / 500 s"
     },
 
     {
