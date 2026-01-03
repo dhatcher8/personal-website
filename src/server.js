@@ -1,156 +1,80 @@
 
-const {createServer} = require('http');
-let express = require('express');
-var cors = require('cors');
-var enforce = require('express-sslify');
-const compression = require('compression');
+// src/server.js
+
+require('dotenv').config();
+const express = require('express');
+const { createServer } = require('http');
 const path = require('path');
-let port = process.env.PORT || 3002
-let request = require('request');
-let querystring = require('querystring');
+const cors = require('cors');
+const compression = require('compression');
+const nodemailer = require('nodemailer');
 
+const app = express();
+const port = process.env.PORT || 3002;
+const buildPath = path.join(__dirname, '..', 'build');
 
-
-let app = express()
+// ----------------- MIDDLEWARE -----------------
+app.disable('x-powered-by'); // hides Express header for security
 app.use(cors());
+app.use(compression());
+app.use(express.json());
 
-const dev = app.get('env') !== 'production';
-
-if (!dev) {
-
+// Enforce HTTPS only on production Heroku
+if (process.env.NODE_ENV === 'production' && process.env.HEROKU === 'true') {
+    const enforce = require('express-sslify');
     app.use(enforce.HTTPS({ trustProtoHeader: true }));
-    app.disable('x-powered-by');
-    app.use(compression());
-    console.log(path)
-    app.use(express.static(path.resolve('../', 'build')));
-    
-
-    const nodemailer = require('nodemailer');
-    const usercred = process.env['USER'];
-    const passcred = process.env['PASS'];
-    
-    var transport = {
-        host: 'smtp.gmail.com',
-        port: 587,
-        auth: {
-            user: usercred,
-            pass: passcred
-        }
-    }
-
-    var transporter = nodemailer.createTransport(transport);
-
-    transporter.verify((error, success) => {
-        if (error) {
-            console.log(error);
-        } else {
-            console.log('Working well')
-        }
-    });
-
-    app.use(express.json());
-
-    app.post('/send', (req, res ,next) => {
-        const name = req.body.name
-        const email = req.body.email
-        const message = req.body.message
-        var content = `Sender's Name: ${name} \nSender's Email Address: ${email} \nMessage: ${message}`
-
-
-        var mail = {
-            from: name,
-            to: usercred,
-            subject: 'Personal Website Contact Form Message',
-            text: content
-        }
-
-        transporter.sendMail(mail, (err, data) => {
-            if (err) {
-                res.json({
-                    msg: 'fail'
-                })
-            } else {
-                res.json({
-                    msg: 'success'
-                })
-            }
-        })
-    })
-
-
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve('../', 'build', 'index.html'));
-    })
-
-} else {
-    app.disable('x-powered-by');
-    app.use(compression());
-    // app.use(morgan('common'));
-    console.log(path)
-    app.use(express.static(path.resolve('../', 'build')));
-    
-
-    const nodemailer = require('nodemailer');
-    const creds = require('./config.js');
-    
-    var transport = {
-        host: 'smtp.gmail.com',
-        port: 587,
-        auth: {
-            user: creds.USER,
-            pass: creds.PASS
-        }
-    }
-
-    var transporter = nodemailer.createTransport(transport);
-
-    transporter.verify((error, success) => {
-        if (error) {
-            console.log(error);
-        } else {
-            console.log('Working well')
-        }
-    });
-
-    app.use(express.json());
-
-    app.post('/send', (req, res ,next) => {
-        const name = req.body.name
-        const email = req.body.email
-        const message = req.body.message
-        var content = `Sender's Name: ${name} \nSender's Email Address: ${email} \nMessage: ${message}`
-
-
-        var mail = {
-            from: name,
-            to: creds.USER,
-            subject: 'Personal Website Contact Form Message',
-            text: content
-        }
-
-        transporter.sendMail(mail, (err, data) => {
-            if (err) {
-                res.json({
-                    msg: 'fail'
-                })
-            } else {
-                res.json({
-                    msg: 'success'
-                })
-            }
-        })
-    })
-
-
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve('../', 'build', 'index.html'));
-    })
 }
 
+// ----------------- NODemailer SETUP -----------------
+const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
+    }
+});
 
+transporter.verify((error, success) => {
+    if (error) console.error('Mailer error:', error);
+    else console.log('Mailer ready');
+});
+
+// ----------------- ROUTES -----------------
+
+// Health check
+app.get('/ping', (req, res) => res.send('pong'));
+
+// Contact form
+app.post('/send', async (req, res) => {
+    try {
+        const { name, email, message } = req.body;
+        const content = `Sender's Name: ${name}\nSender's Email: ${email}\nMessage: ${message}`;
+
+        await transporter.sendMail({
+            from: name,
+            to: process.env.EMAIL_USER,
+            subject: 'Personal Website Contact Form Message',
+            text: content
+        });
+
+        res.json({ msg: 'success' });
+    } catch (err) {
+        console.error('Email error:', err);
+        res.json({ msg: 'fail' });
+    }
+});
+
+// ----------------- SERVE REACT SPA -----------------
+app.use(express.static(buildPath));
+
+// All other routes go to SPA
+app.get('*', (req, res) => {
+    res.sendFile(path.join(buildPath, 'index.html'));
+});
+
+// ----------------- START SERVER -----------------
 const server = createServer(app);
 
-server.listen(port, err => {
-  if (err) throw err;
-  console.log('Server started');
-})
+server.listen(port, () => console.log(`Server listening on port ${port}`))
+      .on('error', (err) => console.error('Server failed to start:', err));
