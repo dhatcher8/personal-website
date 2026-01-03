@@ -23,7 +23,6 @@ const socialsBar = props => {
                 <img className="lin-icon" src={linkedInIcon} alt="linkedIn"></img>
             </a>
         </div>
-        
     );
 }
 

@@ -14,10 +14,10 @@ const about_me_section = props => {
                 <div className="about-me-text-and-image">
                     <div className="about-me-description">
                         <p className="about-me-body-text">
-                        Hi, nice to meet you! My name is Drew Hatcher. I’m a full stack software engineer with nearly 2 years of experience in the industry. I greatly enjoy both frontend and backend development as they present complex problems that allow for high amounts of creativity and the ability to continuously learn in search of solutions. I attended Georgia Tech from 2017 &ndash; 2021 where I earned my Bachelor’s and Master’s in Computer Science, while fostering my passion for teaching.
+                            Hi, nice to meet you! My name is Drew Hatcher. I’m a software engineer with 4+ years of experience in the industry, currently working in the spaces of data engineering, cloud architecture, and development. I’m drawn to these roles as they present complex problems that allow for high amounts of creativity and the ability to continuously learn in search of solutions. I attended Georgia Tech from 2017 &ndash; 2021 where I earned my Bachelor’s and Master’s degrees in Computer Science, while fostering my passion for teaching.
                         </p>
                         <p className="about-me-body-text">
-                        Outside of my career I have a passion for the visual arts, namely photography and graphic design. I love to experience new things and capture those moments in photographs as I do. I enjoy being around and working alongside people from different walks of life, and I’m always excited to learn something new.
+                            Outside of my career I have a passion for the visual arts, namely photography and graphic design. I love to experience new things and capture those moments in photographs as I do. I enjoy being around and working alongside people from different walks of life, and I’m always excited to learn something new.
                         </p>
                         <p className="about-me-body-text">
                             Keep scrolling to learn more about me!
