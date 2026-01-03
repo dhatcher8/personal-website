@@ -24,9 +24,9 @@ const home_section = props => {
                 <img className="logo-and-title-big" src={logoAndTitle} alt="Logo"></img>
                 <div className="subtitles">
                     <ul className="subtitles-ul">
-                        <li>Software Developer</li>
+                        <li>Software Engineer</li>
                         <li>Experience Enthusiast</li>
-                        <li>Creator</li>
+                        <li>Form & Function Advocate</li>
                     </ul>
                 </div>
                 <SocialsBar/>
