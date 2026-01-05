@@ -3,9 +3,9 @@ import ReflectingJPG from '../../assets/images/photography/horizontal/reflecting
 import I85JPG from '../../assets/images/photography/horizontal/i85.jpg';
 import SoftAndSerene from '../../assets/images/photography/horizontal/soft-and-serene.jpg';
 import MagicBeyondTheBend from '../../assets/images/photography/horizontal/magic-beyond-the-bend.jpg';
-import CerealAndSpirits from '../../assets/images/photography/horizontal/cereal-and-spirits.jpg';
+import TheLastStronghold from '../../assets/images/photography/horizontal/the-last-stronghold.jpg';
 import JanesCarousel from '../../assets/images/photography/horizontal/janes-carousel.jpg';
-import ImReady from '../../assets/images/photography/horizontal/im-ready.jpg';
+import EiffelBling from '../../assets/images/photography/horizontal/eiffel-bling.jpg';
 import SpecOps from '../../assets/images/photography/horizontal/spec-ops.jpg';
 import Euphoria from '../../assets/images/photography/horizontal/euphoria.jpg';
 import BloodMoon from '../../assets/images/photography/horizontal/blood-moon.jpg';
@@ -22,20 +22,20 @@ import KingKoj from '../../assets/images/photography/vertical/king-koj.jpg';
 import TheThickOfNature from '../../assets/images/photography/vertical/the-thick-of-nature.jpg';
 import OceanAve from '../../assets/images/photography/vertical/ocean-ave.jpg';
 import HeadInTheClouds from '../../assets/images/photography/vertical/head-in-the-clouds.jpg';
-import WearisomeVentures from '../../assets/images/photography/vertical/wearisome-ventures.jpg';
+import ChinatownNYC from '../../assets/images/photography/vertical/chinatown-nyc.jpg';
 import ScopeCreep from '../../assets/images/photography/vertical/scope-creep.jpg';
 import ToBeSeen from '../../assets/images/photography/vertical/to-be-seen.jpg';
-import SkyOnFire from '../../assets/images/photography/vertical/sky-on-fire.jpg';
-import Graduation from '../../assets/images/photography/vertical/graduation.jpg';
-import BlueHourBehavior from '../../assets/images/photography/vertical/blue-hour-behavior.jpg';
+import SelfProclaimedGOAT from '../../assets/images/photography/vertical/self-proclaimed-goat.jpg';
+import TheEarnestOfAutumn from '../../assets/images/photography/vertical/the-earnest-of-autumn.jpg';
+import ComeWithMeToRMNP from '../../assets/images/photography/vertical/come-with-me-to-rmnp.jpg';
 import ChasingWaterfalls from '../../assets/images/photography/vertical/chasing-waterfalls.jpg';
-import PrivateJungle from '../../assets/images/photography/vertical/private-jungle.jpg';
+import CreteInLayers from '../../assets/images/photography/vertical/crete-in-layers.jpg';
 import StorefrontWindows from '../../assets/images/photography/vertical/storefront-windows.jpg';
 import Suspension from '../../assets/images/photography/vertical/suspension.jpg';
-import VeiledRadiance from '../../assets/images/photography/vertical/veiled-radiance.jpg';
+import FinaleOnTheFourth from '../../assets/images/photography/vertical/finale-on-the-fourth.jpg';
 import ATasteOfRomance from '../../assets/images/photography/horizontal/a-taste-of-romance.jpg';
 import Buzz from '../../assets/images/photography/horizontal/buzz.jpg';
-import CaliforniaSunset from '../../assets/images/photography/horizontal/california-sunset.jpg';
+import DuskAtLasSetas from '../../assets/images/photography/horizontal/dusk-at-las-setas.jpg';
 import LaJolla from '../../assets/images/photography/horizontal/la-jolla.jpg';
 import LazyDay from '../../assets/images/photography/horizontal/lazy-day.jpg';
 import ProductionInProgress from '../../assets/images/photography/horizontal/production-in-progress.jpg';
@@ -69,16 +69,16 @@ export default [
     },
 
     {
-    "src":CaliforniaSunset,
-    "thumbnail":CaliforniaSunset,
+    "src":DuskAtLasSetas,
+    "thumbnail":DuskAtLasSetas,
     "thumbnailWidth": 300,
     "thumbnailHeight": 200,
-    "title":"California Sunset",
-    "date":"July 19th, 2020",
-    "iso":"ISO 200",
+    "title":"Dusk at Las Setas",
+    "date":"June 10th, 2025",
+    "iso":"ISO 1600",
     "zoom":"50 mm",
-    "aperature":"f / 3.5",
-    "shutter":"1 / 250 s"
+    "aperature":"f / 8",
+    "shutter":"1 / 320 s"
     },   
 
     {
@@ -186,29 +186,29 @@ export default [
     },
 
     {
-    "src":BlueHourBehavior,
-    "thumbnail":BlueHourBehavior,
+    "src":ComeWithMeToRMNP,
+    "thumbnail":ComeWithMeToRMNP,
     "thumbnailWidth": 200,
     "thumbnailHeight": 300,
-    "title":"Blue Hour Behavior",
-    "date":"August 11th, 2020",
+    "title":"Come With Me To RMNP",
+    "date":"November 17th, 2023",
     "iso":"ISO 200",
     "zoom":"50 mm",
-    "aperature":"f / 2.0",
-    "shutter":"1 / 320 s"
+    "aperature":"f / 4",
+    "shutter":"1 / 500 s"
     },
 
     {
-    "src":CerealAndSpirits,
-    "thumbnail":CerealAndSpirits,
+    "src":TheLastStronghold,
+    "thumbnail":TheLastStronghold,
     "thumbnailWidth": 300,
     "thumbnailHeight": 200,
-    "title":"Cereal and Spirits",
-    "date":"December 7th, 2018",
-    "iso":"ISO 200",
+    "title":"The Last Stronghold",
+    "date":"June 12th, 2025",
+    "iso":"ISO 800",
     "zoom":"50 mm",
-    "aperature":"f / 2.2",
-    "shutter":"1 / 160 s" 
+    "aperature":"f / 5.6",
+    "shutter":"1 / 250 s"
     },
 
     {
@@ -251,16 +251,16 @@ export default [
     },
 
     {
-    "src":ImReady,
-    "thumbnail":ImReady,
+    "src":EiffelBling,
+    "thumbnail":EiffelBling,
     "thumbnailWidth": 300,
     "thumbnailHeight": 200,
-    "title":"I'm Ready",
-    "date":"February 9th, 2018",
-    "iso":"",
-    "zoom":"",
-    "aperature":"",
-    "shutter":""
+    "title":"Eiffel Bling",
+    "date":"June 27th, 2024",
+    "iso":"ISO 6400",
+    "zoom":"50 mm",
+    "aperature":"f / 5",
+    "shutter":"1 / 320 s"
     },
 
     {
@@ -368,16 +368,16 @@ export default [
     },
 
     {
-    "src":WearisomeVentures,
-    "thumbnail":WearisomeVentures,
+    "src":ChinatownNYC,
+    "thumbnail":ChinatownNYC,
     "thumbnailWidth": 200,
     "thumbnailHeight": 300,
-    "title":"Wearisome Ventures",
-    "date":"February 3rd, 2022",
-    "iso":"ISO 200",
+    "title":"Chinatown NYC",
+    "date":"July 4th, 2025",
+    "iso":"ISO 1600",
     "zoom":"50 mm",
-    "aperature":"f / 4",
-    "shutter":"1 / 400 s"
+    "aperature":"f / 2.8",
+    "shutter":"1 / 250 s"
     },
 
     {
@@ -446,18 +446,17 @@ export default [
     },
 
     {
-    "src":PrivateJungle,
-    "thumbnail":PrivateJungle,
+    "src":CreteInLayers,
+    "thumbnail":CreteInLayers,
     "thumbnailWidth": 200,
     "thumbnailHeight": 300,
-    "title":"Private Jungle",
-    "date":"July 19th, 2020",
+    "title":"Crete in Layers",
+    "date":"October 14th, 2024",
     "iso":"ISO 400",
     "zoom":"50 mm",
-    "aperature":"f / 3.2",
-    "shutter":"1 / 200 s"
+    "aperature":"f / 8",
+    "shutter":"1 / 500 s"
     },
-
 
     {
     "src":RoundBaldSunrise,
@@ -473,16 +472,16 @@ export default [
     },
 
     {
-    "src":SkyOnFire,
-    "thumbnail":SkyOnFire,
+    "src":SelfProclaimedGOAT,
+    "thumbnail":SelfProclaimedGOAT,
     "thumbnailWidth": 200,
     "thumbnailHeight": 300,
-    "title":"Sky on Fire",
-    "date":"December 3rd, 2018",
+    "title":"Self Proclaimed G.O.A.T.",
+    "date":"October 14th, 2024",
     "iso":"ISO 400",
     "zoom":"50 mm",
-    "aperature":"f / 1.8",
-    "shutter":"1 / 160 s"
+    "aperature":"f / 8",
+    "shutter":"1 / 500 s"
     },
 
     {
@@ -525,16 +524,16 @@ export default [
     },
 
     {
-    "src":Graduation,
-    "thumbnail":Graduation,
+    "src":TheEarnestOfAutumn,
+    "thumbnail":TheEarnestOfAutumn,
     "thumbnailWidth": 200,
     "thumbnailHeight": 300,
-    "title":"Graduation",
-    "date":"April 30th, 2020",
-    "iso":"ISO 100",
-    "zoom":"50 mm",
-    "aperature":"f / 3.5",
-    "shutter":"1 / 250 s"
+    "title":"The Earnest Of Autumn",
+    "date":"November 8th, 2025",
+    "iso":"ISO 400",
+    "zoom":"28 mm",
+    "aperature":"f / 4",
+    "shutter":"1 / 320 s"
     },
 
     {
@@ -551,16 +550,16 @@ export default [
     },
 
     {
-    "src":VeiledRadiance,
-    "thumbnail":VeiledRadiance,
+    "src":FinaleOnTheFourth,
+    "thumbnail":FinaleOnTheFourth,
     "thumbnailWidth": 200,
     "thumbnailHeight": 300,
-    "title":"Veiled Radiance",
-    "date":"August 11th, 2020",
-    "iso":"ISO 200",
+    "title":"Finale on the Fourth",
+    "date":"July 4th, 2025",
+    "iso":"ISO 800",
     "zoom":"50 mm",
-    "aperature":"f / 2.0",
-    "shutter":"1 / 250 s"
+    "aperature":"f / 13",
+    "shutter":"1 / 5 s"
     },
 
 ];

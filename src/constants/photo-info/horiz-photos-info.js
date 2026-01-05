@@ -3,9 +3,9 @@ import ReflectingJPG from '../../assets/images/photography/horizontal/reflecting
 import I85JPG from '../../assets/images/photography/horizontal/i85.jpg';
 import SoftAndSerene from '../../assets/images/photography/horizontal/soft-and-serene.jpg';
 import MagicBeyondTheBend from '../../assets/images/photography/horizontal/magic-beyond-the-bend.jpg';
-import CerealAndSpirits from '../../assets/images/photography/horizontal/cereal-and-spirits.jpg';
+import TheLastStronghold from '../../assets/images/photography/horizontal/the-last-stronghold.jpg';
 import JanesCarousel from '../../assets/images/photography/horizontal/janes-carousel.jpg';
-import ImReady from '../../assets/images/photography/horizontal/im-ready.jpg';
+import EiffelBling from '../../assets/images/photography/horizontal/eiffel-bling.jpg';
 import SpecOps from '../../assets/images/photography/horizontal/spec-ops.jpg';
 import Euphoria from '../../assets/images/photography/horizontal/euphoria.jpg';
 import BloodMoon from '../../assets/images/photography/horizontal/blood-moon.jpg';
@@ -15,7 +15,7 @@ import RoundBaldSunrise from '../../assets/images/photography/horizontal/round-b
 import SiblingReunion from '../../assets/images/photography/horizontal/sibling-reunion.jpg';
 import ATasteOfRomance from '../../assets/images/photography/horizontal/a-taste-of-romance.jpg';
 import Buzz from '../../assets/images/photography/horizontal/buzz.jpg';
-import CaliforniaSunset from '../../assets/images/photography/horizontal/california-sunset.jpg';
+import DuskAtLasSetas from '../../assets/images/photography/horizontal/dusk-at-las-setas.jpg';
 import LaJolla from '../../assets/images/photography/horizontal/la-jolla.jpg';
 import LazyDay from '../../assets/images/photography/horizontal/lazy-day.jpg';
 import ProductionInProgress from '../../assets/images/photography/horizontal/production-in-progress.jpg';
@@ -33,13 +33,13 @@ export default [
     },
 
     {
-    "image":CaliforniaSunset,
-    "title":"California Sunset",
-    "date":"July 19th, 2020",
-    "iso":"ISO 200",
+    "image":DuskAtLasSetas,
+    "title":"Dusk at Las Setas",
+    "date":"June 10th, 2025",
+    "iso":"ISO 1600",
     "zoom":"50 mm",
-    "aperature":"f / 3.5",
-    "shutter":"1 / 250 s"
+    "aperature":"f / 8",
+    "shutter":"1 / 320 s"
     }, 
 
     {
@@ -83,13 +83,13 @@ export default [
     },
 
     {
-    "image":CerealAndSpirits,
-    "title":"Cereal and Spirits",
-    "date":"December 7th, 2018",
-    "iso":"ISO 200",
+    "image":TheLastStronghold,
+    "title":"The Last Stronghold",
+    "date":"June 12th, 2025",
+    "iso":"ISO 800",
     "zoom":"50 mm",
-    "aperature":"f / 2.2",
-    "shutter":"1 / 160 s"
+    "aperature":"f / 5.6",
+    "shutter":"1 / 250 s"
     },
 
     {
@@ -103,13 +103,13 @@ export default [
     },
 
     {
-    "image":ImReady,
-    "title":"I'm Ready",
-    "date":"February 9th, 2018",
-    "iso":"",
-    "zoom":"",
-    "aperature":"",
-    "shutter":""
+    "image":EiffelBling,
+    "title":"Eiffel Bling",
+    "date":"June 27th, 2024",
+    "iso":"ISO 6400",
+    "zoom":"50 mm",
+    "aperature":"f / 5",
+    "shutter":"1 / 320 s"
     },
 
     {
